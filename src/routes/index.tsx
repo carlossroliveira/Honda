@@ -13,6 +13,8 @@ export const RoutesComponent = (): JSX.Element => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />} />
+
+        <Route path="*" element={<h1>Não existe essa pagina</h1>} />
       </Routes>
     </BrowserRouter>
   );

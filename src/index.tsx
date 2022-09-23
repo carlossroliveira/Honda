@@ -7,6 +7,9 @@ import ReactDOM from 'react-dom';
 // Components
 // -------------------------------------------------
 import { App } from './App';
+// -------------------------------------------------
+// Context
+// -------------------------------------------------
 import { ThemeProvider } from './Context/themes/ContextTheme';
 import { ThemeProviderApplication } from './Context/contextApplication/ContextTheme';
 

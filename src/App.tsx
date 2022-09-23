@@ -2,17 +2,20 @@
 // Packages
 // -------------------------------------------------
 import React from 'react';
+import { ThemeProvider } from 'styled-components';
 // -------------------------------------------------
 // Components
 // -------------------------------------------------
 import { RoutesComponent } from './routes';
+// -------------------------------------------------
+// Context
+// -------------------------------------------------
 import { useMyHook } from './Context/themes/ContextTheme';
+import { ThemeProviderApplication } from './Context/contextApplication/ContextTheme';
 // -------------------------------------------------
 // Styles
 // -------------------------------------------------
-import { ThemeProvider } from 'styled-components';
 import { GlobalStyle } from './styles/GlobalStyles';
-import { ThemeProviderApplication } from './Context/contextApplication/ContextTheme';
 
 export const App = (): JSX.Element => {
   const { themes } = useMyHook();
