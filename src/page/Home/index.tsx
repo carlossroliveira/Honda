@@ -3,15 +3,11 @@
 // -------------------------------------------------
 import React from 'react';
 // -------------------------------------------------
-// Components
-// -------------------------------------------------
-
-// -------------------------------------------------
 // Styles
 // -------------------------------------------------
-import { ContainerSC } from './layoutStyles';
+import { ContainerSC } from './homeStyles';
 
-export const Layout = (): JSX.Element => {
+export const Home = (): JSX.Element => {
   return (
     <ContainerSC>
       <h1>Layout</h1>

@@ -9,11 +9,11 @@ import { render, screen } from '@testing-library/react';
 // -------------------------------------------------
 // Components
 // -------------------------------------------------
-import { Layout } from '../../components/Layout';
+import { Home } from '../../page/Home';
 // -------------------------------------------------
 // Context
 // -------------------------------------------------
-import { ThemeProviderApplication } from '../../Context/contextApplication/ContextTheme';
+import { ThemeProviderApplication } from '../../context/contextApplication/ContextTheme';
 // -------------------------------------------------
 // Styles
 // -------------------------------------------------
@@ -24,7 +24,7 @@ describe('Layout Testing', () => {
     render(
       <ThemeProvider theme={dark}>
         <ThemeProviderApplication>
-          <Layout />
+          <Home />
         </ThemeProviderApplication>
       </ThemeProvider>,
     );

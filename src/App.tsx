@@ -10,8 +10,8 @@ import { RoutesComponent } from './routes';
 // -------------------------------------------------
 // Context
 // -------------------------------------------------
-import { useMyHook } from './Context/themes/ContextTheme';
-import { ThemeProviderApplication } from './Context/contextApplication/ContextTheme';
+import { useMyHook } from './context/themes/ContextTheme';
+import { ThemeProviderApplication } from './context/contextApplication/ContextTheme';
 // -------------------------------------------------
 // Styles
 // -------------------------------------------------
