@@ -19,6 +19,10 @@ export const ContainerSC = styled.section`
 
   background: ${(props) => props.theme.background.primary};
 
+  /*   background: linear-gradient(165.98deg, #3135c6 14.08%, #00aaff 89.86%);
+
+  background: linear-gradient(180.32deg, #2effaf 15.34%, #00aaff 98.15%); */
+
   @media (max-width: 1025px) {
     font-size: 87.5%;
     height: 100%;
