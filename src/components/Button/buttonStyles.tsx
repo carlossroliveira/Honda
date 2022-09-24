@@ -18,7 +18,6 @@ export const ButtonSC = styled.button<{
   transition: 0.2s ease-in;
 
   color: ${({ theme }) => theme.color.secondary};
-  background-color: ${({ theme }) => theme.color.primary};
   box-shadow: ${({ shadow, theme }) => shadow && theme.boxShadow.primary};
 
   &:hover {
