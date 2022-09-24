@@ -15,10 +15,10 @@ import { ITheme, IThemeContext, IThemeProvider } from './types';
 const Context = createContext({} as IThemeContext);
 
 export const ThemeProvider = ({ children }: IThemeProvider): JSX.Element => {
-  const [themes, setThemes] = useState<ITheme>(dark);
+  const [themes, setThemes] = useState<ITheme>(light);
 
   const handleThemes = () =>
-    themes.title === 'dark' ? setThemes(light) : setThemes(dark);
+    themes.title === 'light' ? setThemes(dark) : setThemes(light);
 
   return (
     <Context.Provider value={{ handleThemes, themes }}>
