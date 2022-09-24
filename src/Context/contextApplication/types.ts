@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-empty-interface */
 // -------------------------------------------------
 // Packages
 // -------------------------------------------------
@@ -25,7 +24,9 @@ export interface IProductProps {
   }[];
 }
 
-export interface IContextApplication {}
+export interface IContextApplication {
+  data: IProductProps | null;
+}
 
 export interface IContextApplicationProvider {
   children: ReactNode | JSX.Element;
