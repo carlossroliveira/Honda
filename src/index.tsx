@@ -11,7 +11,7 @@ import { App } from './App';
 // Context
 // -------------------------------------------------
 import { ThemeProvider } from './context/themes/ContextTheme';
-import { ThemeProviderApplication } from './context/contextApplication/ContextTheme';
+import { ThemeProviderApplication } from './context/contextApplication/ContextApplication';
 
 ReactDOM.render(
   <React.StrictMode>

@@ -11,7 +11,7 @@ import { RoutesComponent } from './routes';
 // Context
 // -------------------------------------------------
 import { useMyHook } from './context/themes/ContextTheme';
-import { ThemeProviderApplication } from './context/contextApplication/ContextTheme';
+import { ThemeProviderApplication } from './context/contextApplication/ContextApplication';
 // -------------------------------------------------
 // Styles
 // -------------------------------------------------

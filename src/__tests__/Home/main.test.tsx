@@ -13,7 +13,7 @@ import { Home } from '../../page/Home';
 // -------------------------------------------------
 // Context
 // -------------------------------------------------
-import { ThemeProviderApplication } from '../../context/contextApplication/ContextTheme';
+import { ThemeProviderApplication } from '../../context/contextApplication/ContextApplication';
 // -------------------------------------------------
 // Styles
 // -------------------------------------------------
