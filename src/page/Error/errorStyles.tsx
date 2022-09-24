@@ -1,12 +1,8 @@
 // -------------------------------------------------
 // Packages
 // -------------------------------------------------
-import styled, { css } from 'styled-components';
-
-export const STYLES_DEFAULT = css`
-  display: flex;
-  flex: 1 500px;
-`;
+import styled from 'styled-components';
+import { STYLES_DEFAULT } from './styleUtils';
 
 export const ContainerSC = styled.section`
   height: 100vh;
