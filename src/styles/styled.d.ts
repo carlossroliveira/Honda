@@ -21,6 +21,7 @@ declare module 'styled-components' {
     };
     boxShadow: {
       primary: string;
+      secondary: string;
     };
   }
 }

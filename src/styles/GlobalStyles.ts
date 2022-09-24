@@ -13,6 +13,8 @@ body {
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  font-family: ${({ theme }) => theme.fontFamily.fontDefault};
 }
 
 ::-webkit-scrollbar {

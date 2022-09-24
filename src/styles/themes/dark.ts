@@ -18,5 +18,6 @@ export default {
   },
   boxShadow: {
     primary: '0px 6px 6px #C6C9D6',
+    secondary: '0px 2px 2px rgba(84, 89, 118, 0.46)',
   },
 };
