@@ -12,6 +12,10 @@ export const ButtonSC = styled.button<{
   variant: ButtonVariantType;
   shadow?: boolean;
 }>`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   border: none;
   border-radius: 29px;
   transition: filter 0.2s;
@@ -26,4 +30,8 @@ export const ButtonSC = styled.button<{
   }
 
   ${({ variant }) => getStyled(variant)}
+
+  svg {
+    margin-left: 5px;
+  }
 `;
