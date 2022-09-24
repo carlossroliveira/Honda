@@ -13,7 +13,12 @@ import { ButtonProps } from './types';
 
 export const Button = (props: ButtonProps) => {
   return (
-    <ButtonSC variant={props.variant} onClick={props.onClick} role="button">
+    <ButtonSC
+      role="button"
+      shadow={props.shadow}
+      variant={props.variant}
+      onClick={props.onClick}
+    >
       <>
         {props.text}
         {props.icon}

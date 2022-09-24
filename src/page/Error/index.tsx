@@ -7,6 +7,7 @@ import { useNavigate } from 'react-router-dom';
 // Components
 // -------------------------------------------------
 import { Button } from '../../components/Button';
+import { NamePage } from '../../components/NamePage';
 // -------------------------------------------------
 // Images
 // -------------------------------------------------
@@ -21,11 +22,14 @@ import {
   ParagraphSC,
   TitleSC,
 } from './errorStyles';
+
 export const Error = (): JSX.Element => {
   const navigate = useNavigate();
 
   return (
     <ContainerSC>
+      <NamePage title="Error" />
+
       <DivOneSC>
         <img src={photo} alt="image error" />
       </DivOneSC>
@@ -35,7 +39,12 @@ export const Error = (): JSX.Element => {
 
         <ParagraphSC>Click back button</ParagraphSC>
 
-        <Button text="Voltar" onClick={() => navigate(-1)} variant="normal" />
+        <Button
+          shadow
+          text="Voltar"
+          variant="normal"
+          onClick={() => navigate(-1)}
+        />
       </DivTwoSC>
     </ContainerSC>
   );
