@@ -20,7 +20,7 @@ const Context = createContext({} as IContextApplication);
 export const ThemeProviderApplication = ({
   children,
 }: IContextApplicationProvider): JSX.Element => {
-  const { data } = useFetch<IProductProps>('http://localhost:5000/info');
+  const { data } = useFetch<IProductProps[]>('http://localhost:5000/info');
 
   return <Context.Provider value={{ data }}>{children}</Context.Provider>;
 };

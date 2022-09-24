@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-empty-interface */
 // -------------------------------------------------
 // Packages
 // -------------------------------------------------
@@ -25,7 +26,7 @@ export interface IProductProps {
 }
 
 export interface IContextApplication {
-  data: IProductProps | null;
+  data: IProductProps[] | null;
 }
 
 export interface IContextApplicationProvider {
