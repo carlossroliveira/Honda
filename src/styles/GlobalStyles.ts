@@ -10,6 +10,9 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 ::-webkit-scrollbar {
