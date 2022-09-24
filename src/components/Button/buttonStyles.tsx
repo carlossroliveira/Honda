@@ -2,21 +2,29 @@
 // Packages
 // -------------------------------------------------
 import styled from 'styled-components';
+import { getStyled } from './styleUtils';
+// -------------------------------------------------
+// Types
+// -------------------------------------------------
+import { ButtonVariantType } from './types';
 
-export const ButtonSC = styled.button<{ ClassName: boolean }>`
+export const ButtonSC = styled.button<{
+  variant: ButtonVariantType;
+  shadow?: boolean;
+}>`
   border: none;
   border-radius: 29px;
   transition: filter 0.2s;
   transition: 0.2s ease-in;
 
-  width: ${({ ClassName }) => (ClassName ? '172px' : '165px')};
-  height: ${({ ClassName }) => (ClassName ? '28px' : '44px')};
-
   color: ${({ theme }) => theme.color.secondary};
-  background-color: ${({ theme }) => theme.background.primary};
+  background-color: ${({ theme }) => theme.color.primary};
+  box-shadow: ${({ shadow, theme }) => shadow && theme.boxShadow.primary};
 
   &:hover {
     filter: brightness(0.9);
     cursor: pointer;
   }
+
+  ${({ variant }) => getStyled(variant)}
 `;

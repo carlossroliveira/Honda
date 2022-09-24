@@ -35,7 +35,7 @@ export const Error = (): JSX.Element => {
 
         <ParagraphSC>Click back button</ParagraphSC>
 
-        <Button text="Voltar" onClick={() => navigate(-1)} />
+        <Button text="Voltar" onClick={() => navigate(-1)} variant="normal" />
       </DivTwoSC>
     </ContainerSC>
   );
