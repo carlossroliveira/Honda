@@ -9,7 +9,7 @@ import { render, screen } from '@testing-library/react';
 // -------------------------------------------------
 // Components
 // -------------------------------------------------
-import { Home } from '../../page/Home';
+import { Button } from '../../components/Button';
 // -------------------------------------------------
 // Context
 // -------------------------------------------------
@@ -19,12 +19,12 @@ import { ThemeProviderApplication } from '../../context/contextApplication/Conte
 // -------------------------------------------------
 import dark from '../../styles/themes/dark';
 
-describe('Home Testing', () => {
+describe('Button Testing', () => {
   it('Should...', () => {
     render(
       <ThemeProvider theme={dark}>
         <ThemeProviderApplication>
-          <Home />
+          <Button text={'testing'} variant={'default'} />
         </ThemeProviderApplication>
       </ThemeProvider>,
     );
