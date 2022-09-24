@@ -1,29 +1,20 @@
+// -------------------------------------------------
+// Packages
+// -------------------------------------------------
 import styled from 'styled-components';
 
 export const ContainerSC = styled.section`
-  margin: 0 auto;
-  height: 100vh;
-  padding: 3rem;
-
   box-sizing: border-box;
 
   display: grid;
-  gap: 2rem;
-  grid-template-columns: 350px 5fr 1fr;
-  grid-template-rows: 70px 1fr 1fr 100px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 64px 100px 334px;
   grid-template-areas:
     'header header header'
-    'sidebar contentMap contentMap'
-    'sidebar contentBus contentInf'
-    'footer footer footer';
+    'info info info'
+    'content content content';
 
-  background: ${(props) => props.theme.background.primary};
-
-  /*   background: linear-gradient(165.98deg, #3135c6 14.08%, #00aaff 89.86%);
-
-  background: linear-gradient(180.32deg, #2effaf 15.34%, #00aaff 98.15%); */
-
-  @media (max-width: 1025px) {
+  /* @media (max-width: 1025px) {
     font-size: 87.5%;
     height: 100%;
     grid-template-columns: repeat(3, 1fr);
@@ -34,5 +25,70 @@ export const ContainerSC = styled.section`
       'contentBus contentBus contentBus'
       'contentInf contentInf contentInf'
       'footer footer footer';
-  }
+  } */
+`;
+
+//=============== Div header
+
+export const HeaderSC = styled.header`
+  grid-area: header;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 2rem;
+
+  background: linear-gradient(165.98deg, #3135c6 14.08%, #00aaff 89.86%);
+`;
+
+export const DivHeaderSC = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+export const ImgHeaderSC = styled.img`
+  margin-left: 12px;
+`;
+
+//=============== Div info
+
+export const InfoSC = styled.div`
+  grid-area: info;
+
+  background-color: ${({ theme }) => theme.background.secondary};
+`;
+
+export const ParagraphInfoSC = styled.p<{ weight: boolean }>`
+  padding: 0 2rem;
+
+  font-size: 18px;
+  line-height: 22px;
+  font-style: normal;
+  text-transform: capitalize;
+
+  color: ${({ theme }) => theme.color.primary};
+  font-weight: ${({ weight }) => (weight ? '700' : '400')};
+`;
+
+export const SpanInfoSC = styled.span`
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  font-style: normal;
+  text-transform: capitalize;
+  color: ${({ theme }) => theme.color.tertiary};
+`;
+
+//=============== Div content
+
+export const MainSC = styled.main`
+  grid-area: content;
+
+  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  background-color: #00aaff;
 `;
