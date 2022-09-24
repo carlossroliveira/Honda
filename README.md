@@ -4,7 +4,7 @@
 ---
 ## Reload-Health
 
-#### System that simulates a purchase, consuming information from the api and entering it in the panel
+#### A system that simulates a purchase, consuming information from the api and entering it in the panel.
 
 
 ```bash
