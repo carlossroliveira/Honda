@@ -3,7 +3,5 @@
 // -------------------------------------------------
 
 export interface INumberProps {
-  healthGoals: {
-    score: number;
-  }[];
+  score: number;
 }

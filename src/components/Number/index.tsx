@@ -9,8 +9,8 @@ import { SPanSC } from './numberStyles';
 // -------------------------------------------------
 // Types
 // -------------------------------------------------
-/* import { INumberProps } from './types'; */
+import { INumberProps } from './types';
 
-export const Number = () => {
-  return <SPanSC>{3}</SPanSC>;
+export const Number = (props: INumberProps) => {
+  return <SPanSC>{props.score}</SPanSC>;
 };
