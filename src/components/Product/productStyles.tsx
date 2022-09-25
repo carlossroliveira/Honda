@@ -102,6 +102,7 @@ export const ParagraphThreeSC = styled.p`
 export const SpanColorSC = styled.span`
   color: ${({ theme }) => theme.color.quaternary};
 `;
+
 export const SpanOneSC = styled.p`
   font-style: normal;
   font-weight: 700;
@@ -118,6 +119,14 @@ export const BrandSC = styled.p`
   opacity: 0.9;
   margin: 1rem 0 0 0;
   color: ${({ theme }) => theme.color.primary};
+`;
+
+export const DivProduct = styled.div`
+  transition: 200ms linear;
+
+  &:hover {
+    ${EFFECT_STYLES}
+  }
 `;
 
 //================== DivTwo

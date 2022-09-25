@@ -29,6 +29,7 @@ import {
   DivImagesSC,
   DivMainSC,
   DivOneSC,
+  DivProduct,
   DivThreeSC,
   DivTwoSC,
   ImgOneSC,
@@ -82,9 +83,9 @@ export const Product = () => {
                 </SpanOneSC>
               </div>
 
-              <div>
+              <DivProduct>
                 <img src={photoFour} alt="logo" />
-              </div>
+              </DivProduct>
             </DivOneSC>
 
             <DivTwoSC>
@@ -117,9 +118,9 @@ export const Product = () => {
 
             <DivThreeSC>
               <Button
-                onClick={() => info.handleValue()}
                 variant={'default'}
                 icon={<AiOutlinePlusCircle />}
+                onClick={() => info.handleValue()}
                 text={`${String(item.price).replace('.', ',')} €`}
               />
             </DivThreeSC>
