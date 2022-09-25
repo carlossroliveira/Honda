@@ -36,7 +36,7 @@ export const Home = (): JSX.Element => {
         </div>
 
         <DivHeaderSC>
-          <Number />
+          <Number score={0} />
           <ImgHeaderSC src={photoTwo} alt="Cart logo" />
         </DivHeaderSC>
       </HeaderSC>

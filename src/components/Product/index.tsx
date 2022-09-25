@@ -95,14 +95,14 @@ export const Product = () => {
               <SubDivTwoSC>
                 <SubMiniDivTwoSC>
                   <SpanSC>Health goals</SpanSC>
-                  <Number />
+                  <Number score={item.healthGoals.length} />
                 </SubMiniDivTwoSC>
 
                 <SpanTwoSC>Améliorer les performances</SpanTwoSC>
 
                 <SubMiniDivTwoSC>
                   <SpanSC>Symptoms</SpanSC>
-                  <Number />
+                  <Number score={item.symptoms.length} />
                 </SubMiniDivTwoSC>
 
                 <SpanTwoSC>Mémorie</SpanTwoSC>

@@ -1,7 +1,13 @@
 // -------------------------------------------------
 // Packages
 // -------------------------------------------------
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+
+const EFFECT_STYLES = css`
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+`;
 
 export const DivMainSC = styled.div`
   width: 396px;
@@ -38,6 +44,12 @@ export const ImgOneSC = styled.div`
   border-radius: 3px;
 
   background: linear-gradient(165.98deg, #3135c6 14.08%, #00aaff 89.86%);
+
+  transition: 200ms linear;
+
+  &:hover {
+    ${EFFECT_STYLES}
+  }
 `;
 
 export const ImgTwoSC = styled.div`
@@ -48,6 +60,12 @@ export const ImgTwoSC = styled.div`
   width: 24px;
   height: 24px;
   border-radius: 3px;
+
+  transition: 200ms linear;
+
+  &:hover {
+    ${EFFECT_STYLES}
+  }
 `;
 
 export const ImgThreeSC = styled.div`
@@ -63,6 +81,12 @@ export const ImgThreeSC = styled.div`
 
   img {
     margin-right: 5px;
+  }
+
+  transition: 200ms linear;
+
+  &:hover {
+    ${EFFECT_STYLES}
   }
 `;
 
