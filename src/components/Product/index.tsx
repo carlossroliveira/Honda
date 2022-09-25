@@ -17,19 +17,25 @@ import { useMyHookApplication } from '../../context/contextApplication/ContextAp
 // -------------------------------------------------
 import photoOne from '../../assets/Shape.png';
 import photoTwo from '../../assets/Vector (2).png';
-import photoThree from '../../assets/fluent_pill-20-filled.png';
-import photoFour from '../../assets/Picture2 (image).png';
-import photoFive from '../../assets/Vector (1).png';
-import photoSix from '../../assets/Vector.png';
+import photoThree from '../../assets/fluent_pill-20-filled.svg';
+import photoFour from '../../assets/Picture2 (image).svg';
+import photoFive from '../../assets/Vector (1).svg';
+import photoSix from '../../assets/Vector.svg';
 // -------------------------------------------------
 // Styles
 // -------------------------------------------------
 import {
+  BrandSC,
+  DivImagesSC,
   DivMainSC,
   DivOneSC,
   DivThreeSC,
   DivTwoSC,
   ImgOneSC,
+  ImgThreeSC,
+  ImgTwoSC,
+  ParagraphThreeSC,
+  SpanColorSC,
   SpanOneSC,
   SpanSC,
   SpanTwoSC,
@@ -53,15 +59,31 @@ export const Product = () => {
           <DivMainSC key={item.id}>
             <DivOneSC>
               <div>
-                <ImgOneSC>
-                  <img src={photoSix} alt="logo" />
-                </ImgOneSC>
-                <img src={photoFive} alt="logo" />
-                <img src={photoThree} alt="logo" />
+                <DivImagesSC>
+                  {item.isInPack && (
+                    <ImgOneSC>
+                      <img src={photoSix} alt="logo" />
+                    </ImgOneSC>
+                  )}
 
-                <SpanOneSC>{item.brand}</SpanOneSC>
+                  {item.hasPrecaution && (
+                    <ImgTwoSC>
+                      <img src={photoFive} alt="logo" />
+                    </ImgTwoSC>
+                  )}
+
+                  <ImgThreeSC>
+                    <img src={photoThree} alt="logo" />
+                    <ParagraphThreeSC>{item.capsuleAmount}</ParagraphThreeSC>
+                  </ImgThreeSC>
+                </DivImagesSC>
+
+                <BrandSC>{item.brand}</BrandSC>
                 <SpanOneSC>{item.name}</SpanOneSC>
-                <SpanOneSC>Votré compatibilité {item.score}/100</SpanOneSC>
+                <SpanOneSC>
+                  Votré compatibilité{' '}
+                  <SpanColorSC>{item.score}/100</SpanColorSC>
+                </SpanOneSC>
               </div>
 
               <div>

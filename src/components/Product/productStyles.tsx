@@ -8,7 +8,6 @@ export const DivMainSC = styled.div`
   height: 334px;
   padding: 1rem;
   border-radius: 8px;
-  border: 5px solid blue;
 
   box-shadow: ${({ theme }) => theme.boxShadow.primary};
 `;
@@ -21,18 +20,79 @@ export const DivOneSC = styled.div`
   justify-content: space-between;
 `;
 
-export const ImgOneSC = styled.div`
-  background: linear-gradient(165.98deg, #3135c6 14.08%, #00aaff 89.86%);
-  border-radius: 3px;
-  width: 24px;
-  height: 24px;
+export const DivImagesSC = styled.div`
+  display: flex;
+
+  div + div {
+    margin-left: 6px;
+  }
 `;
 
+export const ImgOneSC = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 24px;
+  height: 24px;
+  border-radius: 3px;
+
+  background: linear-gradient(165.98deg, #3135c6 14.08%, #00aaff 89.86%);
+`;
+
+export const ImgTwoSC = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 24px;
+  height: 24px;
+  border-radius: 3px;
+`;
+
+export const ImgThreeSC = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 46px;
+  height: 24px;
+  border-radius: 4px;
+
+  background-color: ${({ theme }) => theme.background.quaternary};
+
+  img {
+    margin-right: 5px;
+  }
+`;
+
+export const ParagraphThreeSC = styled.p`
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: ${({ theme }) => theme.color.primary};
+`;
+
+export const SpanColorSC = styled.span`
+  color: ${({ theme }) => theme.color.quaternary};
+`;
 export const SpanOneSC = styled.p`
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 22px;
+  margin: 5px 0 0 0;
+  color: ${({ theme }) => theme.color.primary};
+`;
+
+export const BrandSC = styled.p`
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  opacity: 0.9;
+  margin: 1rem 0 0 0;
   color: ${({ theme }) => theme.color.primary};
 `;
 
@@ -42,8 +102,10 @@ export const DivTwoSC = styled.div`
   display: flex;
 
   width: 362px;
-  height: fit-content;
   border-radius: 8px;
+  height: fit-content;
+
+  margin-top: 10px;
 
   background-color: ${({ theme }) => theme.background.quaternary};
 `;
@@ -81,11 +143,12 @@ export const SpanTwoSC = styled.span`
 //================== DivThree
 
 export const SubDivThreeSC = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
   margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
 `;
 
 export const SubMiniDivThreeSC = styled.div`
@@ -107,5 +170,5 @@ export const DivThreeSC = styled.div`
   display: flex;
   justify-content: end;
 
-  margin-top: 21px;
+  margin-top: 15px;
 `;

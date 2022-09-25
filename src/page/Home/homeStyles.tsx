@@ -89,8 +89,6 @@ export const MainSC = styled.main`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
-  background-color: #00aaff;
 `;
 
 export const LoaderSC = styled.div`
