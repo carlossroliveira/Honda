@@ -17,13 +17,20 @@ import { useMyHookApplication } from '../../context/contextApplication/ContextAp
 // -------------------------------------------------
 import photoOne from '../../assets/Shape.png';
 import photoTwo from '../../assets/Vector (2).png';
+import photoThree from '../../assets/fluent_pill-20-filled.png';
+import photoFour from '../../assets/Picture2 (image).png';
+import photoFive from '../../assets/Vector (1).png';
+import photoSix from '../../assets/Vector.png';
 // -------------------------------------------------
 // Styles
 // -------------------------------------------------
 import {
   DivMainSC,
+  DivOneSC,
   DivThreeSC,
   DivTwoSC,
+  ImgOneSC,
+  SpanOneSC,
   SpanSC,
   SpanTwoSC,
   SubDivThreeSC,
@@ -44,7 +51,23 @@ export const Product = () => {
       {info?.data?.map((item) => (
         <>
           <DivMainSC key={item.id}>
-            <div>info</div>
+            <DivOneSC>
+              <div>
+                <ImgOneSC>
+                  <img src={photoSix} alt="logo" />
+                </ImgOneSC>
+                <img src={photoFive} alt="logo" />
+                <img src={photoThree} alt="logo" />
+
+                <SpanOneSC>{item.brand}</SpanOneSC>
+                <SpanOneSC>{item.name}</SpanOneSC>
+                <SpanOneSC>Votré compatibilité {item.score}/100</SpanOneSC>
+              </div>
+
+              <div>
+                <img src={photoFour} alt="logo" />
+              </div>
+            </DivOneSC>
 
             <DivTwoSC>
               <SubDivTwoSC>

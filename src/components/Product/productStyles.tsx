@@ -15,6 +15,27 @@ export const DivMainSC = styled.div`
 
 //================== DivOne
 
+export const DivOneSC = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+export const ImgOneSC = styled.div`
+  background: linear-gradient(165.98deg, #3135c6 14.08%, #00aaff 89.86%);
+  border-radius: 3px;
+  width: 24px;
+  height: 24px;
+`;
+
+export const SpanOneSC = styled.p`
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: ${({ theme }) => theme.color.primary};
+`;
+
 //================== DivTwo
 
 export const DivTwoSC = styled.div`
