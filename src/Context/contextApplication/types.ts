@@ -27,6 +27,8 @@ export interface IProductProps {
 
 export interface IContextApplication {
   data: IProductProps[] | null;
+  handleValue: () => void;
+  values: number;
 }
 
 export interface IContextApplicationProvider {

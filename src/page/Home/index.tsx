@@ -7,6 +7,10 @@ import React from 'react';
 // -------------------------------------------------
 import { Number } from '../../components/Number';
 // -------------------------------------------------
+// Context
+// -------------------------------------------------
+import { useMyHookApplication } from '../../context/contextApplication/ContextApplication';
+// -------------------------------------------------
 // Images
 // -------------------------------------------------
 import photoOne from '../../assets/Group.png';
@@ -28,6 +32,8 @@ import {
 import { Product } from '../../components/Product';
 
 export const Home = (): JSX.Element => {
+  const info = useMyHookApplication();
+
   return (
     <ContainerSC>
       <HeaderSC>
@@ -36,7 +42,7 @@ export const Home = (): JSX.Element => {
         </div>
 
         <DivHeaderSC>
-          <Number score={0} />
+          <Number score={info.values} />
           <ImgHeaderSC src={photoTwo} alt="Cart logo" />
         </DivHeaderSC>
       </HeaderSC>

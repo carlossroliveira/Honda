@@ -1,7 +1,7 @@
 // -------------------------------------------------
 // Packages
 // -------------------------------------------------
-import React, { createContext, useContext } from 'react';
+import React, { createContext, useContext, useState } from 'react';
 // -------------------------------------------------
 // Hooks
 // -------------------------------------------------
@@ -22,7 +22,15 @@ export const ThemeProviderApplication = ({
 }: IContextApplicationProvider): JSX.Element => {
   const { data } = useFetch<IProductProps[]>('http://localhost:5000/info');
 
-  return <Context.Provider value={{ data }}>{children}</Context.Provider>;
+  const [values, setValues] = useState<number>(0);
+
+  const handleValue = () => setValues(values + 1);
+
+  return (
+    <Context.Provider value={{ data, handleValue, values }}>
+      {children}
+    </Context.Provider>
+  );
 };
 
 export const useMyHookApplication = (): IContextApplication =>

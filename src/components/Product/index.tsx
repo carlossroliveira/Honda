@@ -44,10 +44,6 @@ import {
   SubMiniDivThreeSC,
   SubMiniDivTwoSC,
 } from './productStyles';
-// -------------------------------------------------
-// Types
-// -------------------------------------------------
-/* import { INumberProps } from './types'; */
 
 export const Product = () => {
   const info = useMyHookApplication();
@@ -121,6 +117,7 @@ export const Product = () => {
 
             <DivThreeSC>
               <Button
+                onClick={() => info.handleValue()}
                 variant={'default'}
                 icon={<AiOutlinePlusCircle />}
                 text={`${String(item.price).replace('.', ',')} €`}

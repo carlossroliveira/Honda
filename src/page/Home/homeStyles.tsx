@@ -13,19 +13,6 @@ export const ContainerSC = styled.section`
     'header header header'
     'info info info'
     'content content content';
-
-  /* @media (max-width: 1025px) {
-    font-size: 87.5%;
-    height: 100%;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas:
-      'header header header'
-      'sidebar sidebar sidebar'
-      'contentMap contentMap contentMap'
-      'contentBus contentBus contentBus'
-      'contentInf contentInf contentInf'
-      'footer footer footer';
-  } */
 `;
 
 //=============== Div header
