@@ -5,12 +5,11 @@ import React from 'react';
 import 'jest-styled-components';
 import '@testing-library/jest-dom';
 import { ThemeProvider } from 'styled-components';
-import userEvent from '@testing-library/user-event';
 import { render, screen } from '@testing-library/react';
 // -------------------------------------------------
 // Components
 // -------------------------------------------------
-import { Button } from '../../components/Button';
+import { Number } from '../../components/Number';
 // -------------------------------------------------
 // Context
 // -------------------------------------------------
@@ -25,43 +24,31 @@ describe('Button Testing', () => {
     render(
       <ThemeProvider theme={dark}>
         <ThemeProviderApplication>
-          <Button text={'Button'} variant={'default'} />
+          <Number score={0} />
         </ThemeProviderApplication>
       </ThemeProvider>,
     );
 
-    expect(
-      screen.getByRole('button', {
-        name: /button/i,
-      }),
-    ).toBeInTheDocument();
+    expect(screen.getByText(/0/i)).toBeInTheDocument();
   });
 
-  it('When clicking the button should be called correctly.', () => {
-    const onClickTest = jest.fn();
+  it('Should render with the value 10 correctly.', () => {
     render(
       <ThemeProvider theme={dark}>
         <ThemeProviderApplication>
-          <Button text={'Button'} onClick={onClickTest} variant={'default'} />
+          <Number score={10} />
         </ThemeProviderApplication>
       </ThemeProvider>,
     );
 
-    userEvent.click(
-      screen.getByRole('button', {
-        name: /button/i,
-      }),
-    );
-
-    expect(onClickTest).toHaveBeenCalled();
-    expect(onClickTest).toHaveBeenCalledTimes(1);
+    expect(screen.getByText(/10/i)).toBeInTheDocument();
   });
 
   it('component rendering matches snapshot correctly', () => {
     render(
       <ThemeProvider theme={dark}>
         <ThemeProviderApplication>
-          <Button text={'Button'} variant={'default'} />
+          <Number score={10} />
         </ThemeProviderApplication>
       </ThemeProvider>,
     );
@@ -69,7 +56,7 @@ describe('Button Testing', () => {
       render(
         <ThemeProvider theme={dark}>
           <ThemeProviderApplication>
-            <Button text={'Button'} variant={'default'} />
+            <Number score={10} />
           </ThemeProviderApplication>
         </ThemeProvider>,
       ),
