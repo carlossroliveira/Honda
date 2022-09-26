@@ -15,8 +15,8 @@ import { useMyHookApplication } from '../../context/contextApplication/ContextAp
 // -------------------------------------------------
 // Images
 // -------------------------------------------------
-import photoOne from '../../assets/Shape.png';
-import photoTwo from '../../assets/Vector (2).png';
+import photoOne from '../../assets/Shape.svg';
+import photoTwo from '../../assets/Vectorr.svg';
 import photoThree from '../../assets/fluent_pill-20-filled.svg';
 import photoFour from '../../assets/Picture2 (image).svg';
 import photoFive from '../../assets/Vector (1).svg';
@@ -35,6 +35,7 @@ import {
   ImgOneSC,
   ImgThreeSC,
   ImgTwoSC,
+  LoaderSC,
   ParagraphThreeSC,
   SpanColorSC,
   SpanOneSC,
@@ -42,16 +43,34 @@ import {
   SpanTwoSC,
   SubDivThreeSC,
   SubDivTwoSC,
-  SubMiniDivThreeSC,
   SubMiniDivTwoSC,
 } from './productStyles';
+import { IProductProps } from '../../context/contextApplication/types';
 
 export const Product = () => {
   const info = useMyHookApplication();
 
+  const scoreSearch = (item: IProductProps | any, list: string) => {
+    return item[list]
+      .map(
+        (
+          i: [
+            {
+              score: number;
+            },
+          ],
+        ) => i,
+      )
+      .reduce(
+        (prev: { score: number }, current: { score: number }) =>
+          prev.score > current.score ? prev : current,
+        0,
+      );
+  };
+
   return (
     <>
-      {info?.data?.map((item) => (
+      {info?.data?.map((item: IProductProps) => (
         <>
           <DivMainSC key={item.id}>
             <DivOneSC>
@@ -76,7 +95,9 @@ export const Product = () => {
                 </DivImagesSC>
 
                 <BrandSC>{item.brand}</BrandSC>
+
                 <SpanOneSC>{item.name}</SpanOneSC>
+
                 <SpanOneSC>
                   Votré compatibilité{' '}
                   <SpanColorSC>{item.score}/100</SpanColorSC>
@@ -106,13 +127,13 @@ export const Product = () => {
               </SubDivTwoSC>
 
               <SubDivThreeSC>
-                <SubMiniDivThreeSC>
+                <LoaderSC value={scoreSearch(item, 'healthGoals').score}>
                   <img src={photoTwo} alt="Health goals logo" />
-                </SubMiniDivThreeSC>
+                </LoaderSC>
 
-                <SubMiniDivThreeSC>
+                <LoaderSC value={scoreSearch(item, 'symptoms').score}>
                   <img src={photoOne} alt="Symptoms logo" />
-                </SubMiniDivThreeSC>
+                </LoaderSC>
               </SubDivThreeSC>
             </DivTwoSC>
 

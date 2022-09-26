@@ -27,7 +27,6 @@ import {
   InfoSC,
   MainSC,
   SpanInfoSC,
-  /*  LoaderSC, */
 } from './homeStyles';
 import { Product } from '../../components/Product';
 
@@ -59,8 +58,6 @@ export const Home = (): JSX.Element => {
       <MainSC>
         <Product />
       </MainSC>
-
-      {/* <LoaderSC></LoaderSC> */}
     </ContainerSC>
   );
 };

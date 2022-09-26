@@ -77,14 +77,3 @@ export const MainSC = styled.main`
   flex-wrap: wrap;
   justify-content: center;
 `;
-
-export const LoaderSC = styled.div`
-  border: 6px solid gray;
-  border-radius: 50%;
-  border-top-color: blue;
-  /*   border-right-color: blue;
-  border-bottom-color: blue;
-  border-left-color: blue; */
-  height: 50px;
-  width: 50px;
-`;

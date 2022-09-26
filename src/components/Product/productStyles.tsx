@@ -2,6 +2,7 @@
 // Packages
 // -------------------------------------------------
 import styled, { css } from 'styled-components';
+import { getCircleStyled } from './styleUtils';
 
 const EFFECT_STYLES = css`
   -webkit-transform: scale(1.3);
@@ -184,24 +185,24 @@ export const SubDivThreeSC = styled.div`
   justify-content: space-around;
 `;
 
-export const SubMiniDivThreeSC = styled.div`
-  background: linear-gradient(white, white) padding-box,
-    linear-gradient(165.98deg, #3135c6 14.08%, #00aaff 89.86%) border-box;
-  border-radius: 50em;
-  border: 2px solid transparent;
-
-  padding: 10px;
-  width: 44px;
-  height: 44px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
 export const DivThreeSC = styled.div`
   display: flex;
   justify-content: end;
 
   margin-top: 15px;
+`;
+
+export const LoaderSC = styled.div<{ value: number }>`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 1s;
+
+  &:hover {
+    -webkit-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+  }
+
+  ${({ value }) => getCircleStyled(value)}
 `;
