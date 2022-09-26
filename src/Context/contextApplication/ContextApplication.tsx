@@ -22,12 +22,26 @@ export const ThemeProviderApplication = ({
 }: IContextApplicationProvider): JSX.Element => {
   const { data } = useFetch<IProductProps[]>('http://localhost:5000/info');
 
+  // eslint-disable-next-line no-unused-vars
   const [values, setValues] = useState<number>(0);
+  const [handleProduct, setHandleProduct] = useState<string>('');
 
-  const handleValue = () => setValues(values + 1);
+  const handleValue = () => {
+    const bla = [];
+
+    bla.push(handleProduct);
+
+    console.log(...[bla]);
+
+    /* if (values < 4) {
+      setValues(values + 1);
+    } else if (values > 1 && bla?.find((v) => v === handleProduct)) {
+      alert('jÁ EXISTE');
+    } */
+  };
 
   return (
-    <Context.Provider value={{ data, handleValue, values }}>
+    <Context.Provider value={{ data, handleValue, values, setHandleProduct }}>
       {children}
     </Context.Provider>
   );

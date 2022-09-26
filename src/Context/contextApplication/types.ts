@@ -2,7 +2,7 @@
 // -------------------------------------------------
 // Packages
 // -------------------------------------------------
-import { ReactNode } from 'react';
+import { Dispatch, ReactNode } from 'react';
 // -------------------------------------------------
 // Types
 // -------------------------------------------------
@@ -29,6 +29,7 @@ export interface IContextApplication {
   data: IProductProps[] | null;
   handleValue: () => void;
   values: number;
+  setHandleProduct: Dispatch<React.SetStateAction<string>>;
 }
 
 export interface IContextApplicationProvider {

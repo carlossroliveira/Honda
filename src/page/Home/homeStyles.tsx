@@ -2,6 +2,7 @@
 // Packages
 // -------------------------------------------------
 import styled from 'styled-components';
+import { getCircleStyled } from './styleUtils';
 
 export const ContainerSC = styled.section`
   box-sizing: border-box;
@@ -34,8 +35,18 @@ export const DivHeaderSC = styled.div`
   align-items: center;
 `;
 
-export const ImgHeaderSC = styled.img`
-  margin-left: 12px;
+export const LoaderSC = styled.div<{ value: number }>`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 4px;
+
+  background-color: ${({ theme }) => theme.background.secondary};
+
+  transition: all 1s;
+
+  ${({ value }) => getCircleStyled(value)}
 `;
 
 //=============== Div info

@@ -13,8 +13,8 @@ import { useMyHookApplication } from '../../context/contextApplication/ContextAp
 // -------------------------------------------------
 // Images
 // -------------------------------------------------
-import photoOne from '../../assets/Group.png';
-import photoTwo from '../../assets/Group 378.png';
+import photoOne from '../../assets/logo.svg';
+import photoTwo from '../../assets/Group 377.svg';
 // -------------------------------------------------
 // Styles
 // -------------------------------------------------
@@ -23,10 +23,10 @@ import {
   DivHeaderSC,
   ParagraphInfoSC,
   HeaderSC,
-  ImgHeaderSC,
   InfoSC,
   MainSC,
   SpanInfoSC,
+  LoaderSC,
 } from './homeStyles';
 import { Product } from '../../components/Product';
 
@@ -42,7 +42,10 @@ export const Home = (): JSX.Element => {
 
         <DivHeaderSC>
           <Number score={info.values} />
-          <ImgHeaderSC src={photoTwo} alt="Cart logo" />
+
+          <LoaderSC value={info.values}>
+            <img src={photoTwo} alt="Cart logo" />
+          </LoaderSC>
         </DivHeaderSC>
       </HeaderSC>
 
