@@ -1,8 +1,7 @@
-/* eslint-disable @typescript-eslint/no-empty-interface */
 // -------------------------------------------------
 // Packages
 // -------------------------------------------------
-import { Dispatch, ReactNode } from 'react';
+import { ReactNode } from 'react';
 // -------------------------------------------------
 // Types
 // -------------------------------------------------
@@ -29,7 +28,6 @@ export interface IContextApplication {
   data: IProductProps[] | null;
   handleValue: () => void;
   values: number;
-  setHandleProduct: Dispatch<React.SetStateAction<string>>;
 }
 
 export interface IContextApplicationProvider {

@@ -141,9 +141,7 @@ export const Product = () => {
               <Button
                 variant={'default'}
                 icon={<AiOutlinePlusCircle />}
-                onClick={() => {
-                  info.handleValue(), info.setHandleProduct(`${item.id}`);
-                }}
+                onClick={() => info.handleValue()}
                 text={`${String(item.price).replace('.', ',')} €`}
               />
             </DivThreeSC>

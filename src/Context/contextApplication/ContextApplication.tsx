@@ -2,6 +2,7 @@
 // Packages
 // -------------------------------------------------
 import React, { createContext, useContext, useState } from 'react';
+import Swal from 'sweetalert2';
 // -------------------------------------------------
 // Hooks
 // -------------------------------------------------
@@ -23,25 +24,32 @@ export const ThemeProviderApplication = ({
   const { data } = useFetch<IProductProps[]>('http://localhost:5000/info');
 
   const [values, setValues] = useState<number>(0);
-  // eslint-disable-next-line no-unused-vars
-  const [handleProduct, setHandleProduct] = useState<string>('');
 
   const handleValue = () => {
-    /* const bla = [];
-
-    bla.push([...handleProduct]);
-
-    console.log(bla); */
-
     if (values < 4) {
       setValues(values + 1);
     } else {
-      alert('Carrinho cheio');
+      const Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.addEventListener('mouseenter', Swal.stopTimer);
+          toast.addEventListener('mouseleave', Swal.resumeTimer);
+        },
+      });
+
+      Toast.fire({
+        icon: 'error',
+        title: 'Full cart!',
+      });
     }
   };
 
   return (
-    <Context.Provider value={{ data, handleValue, values, setHandleProduct }}>
+    <Context.Provider value={{ data, handleValue, values }}>
       {children}
     </Context.Provider>
   );
