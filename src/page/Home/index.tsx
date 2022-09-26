@@ -2,6 +2,7 @@
 // Packages
 // -------------------------------------------------
 import React from 'react';
+import { MdOutlineLightMode, MdOutlineNightlight } from 'react-icons/md';
 // -------------------------------------------------
 // Components
 // -------------------------------------------------
@@ -9,6 +10,7 @@ import { Number } from '../../components/Number';
 // -------------------------------------------------
 // Context
 // -------------------------------------------------
+import { useMyHook } from '../../context/themes/ContextTheme';
 import { useMyHookApplication } from '../../context/contextApplication/ContextApplication';
 // -------------------------------------------------
 // Images
@@ -27,10 +29,12 @@ import {
   MainSC,
   SpanInfoSC,
   LoaderSC,
+  DivParagraphSC,
 } from './homeStyles';
 import { Product } from '../../components/Product';
 
 export const Home = (): JSX.Element => {
+  const infoTheme = useMyHook();
   const info = useMyHookApplication();
 
   return (
@@ -50,11 +54,20 @@ export const Home = (): JSX.Element => {
       </HeaderSC>
 
       <InfoSC>
-        <ParagraphInfoSC weight>Best products</ParagraphInfoSC>
+        <DivParagraphSC>
+          <ParagraphInfoSC weight>Best products</ParagraphInfoSC>
+
+          <span onClick={() => infoTheme.handleThemes()}>
+            {infoTheme?.themes.title === 'light' ? (
+              <MdOutlineLightMode />
+            ) : (
+              <MdOutlineNightlight />
+            )}
+          </span>
+        </DivParagraphSC>
 
         <ParagraphInfoSC weight={false}>
-          From a base of
-          <SpanInfoSC> 3456 products</SpanInfoSC>
+          From a base of <SpanInfoSC> 3456 products</SpanInfoSC>
         </ParagraphInfoSC>
       </InfoSC>
 
