@@ -1,22 +1,12 @@
 {
   "name": "reload-health",
+  "author": "Carlos Oliveira",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.11.45",
-    "@types/react": "^18.0.15",
-    "@types/react-dom": "^18.0.6",
-    "axios": "^0.27.2",
-    "jest-styled-components": "^7.0.8",
-    "json-server": "^0.17.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
-    "styled-components": "^5.3.5",
-    "sweetalert2": "^11.4.33",
-    "typescript": "^4.7.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -45,6 +35,17 @@
     ]
   },
   "devDependencies": {
+    "axios": "^0.27.2",
+    "typescript": "^4.7.4",
+    "@types/jest": "^27.5.2",
+    "json-server": "^0.17.0",
+    "sweetalert2": "^11.4.33",
+    "@types/node": "^16.11.45",
+    "@types/react": "^18.0.15",
+    "react-router-dom": "^6.3.0",
+    "@types/react-dom": "^18.0.6",
+    "styled-components": "^5.3.5",
+    "jest-styled-components": "^7.0.8",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
