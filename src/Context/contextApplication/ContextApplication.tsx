@@ -1,7 +1,9 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 // -------------------------------------------------
 // Packages
 // -------------------------------------------------
 import React, { createContext, useContext, useState } from 'react';
+import photo from '../../assets/GroupModal.svg';
 import Swal from 'sweetalert2';
 // -------------------------------------------------
 // Hooks
@@ -23,7 +25,28 @@ export const ThemeProviderApplication = ({
 }: IContextApplicationProvider): JSX.Element => {
   const { data } = useFetch<IProductProps[]>('http://localhost:5000/info');
 
+  const [array, setArray] = useState<any>([]);
   const [values, setValues] = useState<number>(0);
+
+  if (values !== 4) {
+    if (array.some((x: any) => array.indexOf(x) !== array.lastIndexOf(x))) {
+      Swal.fire({
+        text: `You've already added ${array.name} to your basket. Do you want to remove it ?`,
+        showCancelButton: true,
+        confirmButtonColor: '#21E7C5',
+        confirmButtonText: 'Yes',
+        cancelButtonText: 'No keep it',
+        cancelButtonColor: '#C6C9D6',
+
+        imageUrl: photo,
+        imageWidth: 200,
+        imageHeight: 200,
+        imageAlt: 'Custom image',
+      }).then(() => {
+        array.pop();
+      });
+    }
+  }
 
   const handleValue = () => {
     if (values < 4) {
@@ -49,7 +72,7 @@ export const ThemeProviderApplication = ({
   };
 
   return (
-    <Context.Provider value={{ data, handleValue, values }}>
+    <Context.Provider value={{ data, handleValue, values, setArray, array }}>
       {children}
     </Context.Provider>
   );
