@@ -6,8 +6,7 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 body {
-  font: 400 1rem "Inter", sans-serif;
-  max-width: 1440px;
+  width: fit-content;
   margin: 0 auto;
   padding: 0;
 
@@ -21,11 +20,12 @@ body {
   width: 12px
 }
 ::-webkit-scrollbar-thumb {
-  background: ${(props) => props.theme.background.primary};
   border-radius: 50px;
-  border: 1px solid ${(props) => props.theme.background.primary};
+  border: 1px solid ${({ theme }) => theme.background.primary};
+
+  background: ${({ theme }) => theme.background.primary};
 }
 ::-webkit-scrollbar-button {
-  background: ${(props) => props.theme.background.primary};
+  background: ${({ theme }) => theme.background.primary};
 }
 `;

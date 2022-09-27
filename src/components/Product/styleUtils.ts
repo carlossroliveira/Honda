@@ -5,6 +5,13 @@ import { css } from 'styled-components';
 // -------------------------------------------------
 // Types
 // -------------------------------------------------
+
+export const EFFECT_STYLES = css`
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+`;
+
 const CIRCLE_STYLE = css`
   width: 44px;
   height: 44px;

@@ -1,14 +1,8 @@
 // -------------------------------------------------
 // Packages
 // -------------------------------------------------
-import styled, { css } from 'styled-components';
-import { getCircleStyled } from './styleUtils';
-
-const EFFECT_STYLES = css`
-  -webkit-transform: scale(1.3);
-  -ms-transform: scale(1.3);
-  transform: scale(1.3);
-`;
+import styled from 'styled-components';
+import { EFFECT_STYLES, getCircleStyled } from './styleUtils';
 
 export const DivMainSC = styled.div`
   width: 396px;
