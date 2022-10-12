@@ -6,7 +6,6 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 body {
-  width: fit-content;
   margin: 0 auto;
   padding: 0;
 

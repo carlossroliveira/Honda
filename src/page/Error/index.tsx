@@ -43,7 +43,7 @@ export const Error = (): JSX.Element => {
           shadow
           text="Voltar"
           variant="normal"
-          onClick={() => navigate(-1)}
+          onClick={() => navigate('/')}
         />
       </DivTwoSC>
     </ContainerSC>
