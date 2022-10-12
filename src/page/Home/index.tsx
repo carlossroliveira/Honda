@@ -10,8 +10,8 @@ import { Number } from '../../components/Number';
 // -------------------------------------------------
 // Context
 // -------------------------------------------------
-import { useMyHook } from '../../context/themes/ContextTheme';
-import { useMyHookApplication } from '../../context/contextApplication/ContextApplication';
+import { useMyHook } from '../../contextMain/themes/ContextTheme';
+import { useMyHookApplication } from '../../contextMain/contextApplication/ContextApplication';
 // -------------------------------------------------
 // Images
 // -------------------------------------------------

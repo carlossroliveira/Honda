@@ -13,7 +13,7 @@ import { NamePage } from '../../components/NamePage';
 // -------------------------------------------------
 // Context
 // -------------------------------------------------
-import { ThemeProviderApplication } from '../../context/contextApplication/ContextApplication';
+import { ThemeProviderApplication } from '../../contextMain/contextApplication/ContextApplication';
 // -------------------------------------------------
 // Styles
 // -------------------------------------------------

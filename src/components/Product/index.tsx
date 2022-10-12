@@ -11,7 +11,7 @@ import { Number } from '../../components/Number';
 // -------------------------------------------------
 // Context
 // -------------------------------------------------
-import { useMyHookApplication } from '../../context/contextApplication/ContextApplication';
+import { useMyHookApplication } from '../../contextMain/contextApplication/ContextApplication';
 // -------------------------------------------------
 // Images
 // -------------------------------------------------
@@ -45,7 +45,7 @@ import {
   SubDivTwoSC,
   SubMiniDivTwoSC,
 } from './productStyles';
-import { IProductProps } from '../../context/contextApplication/types';
+import { IProductProps } from '../../contextMain/contextApplication/types';
 
 export const Product = () => {
   const info = useMyHookApplication();

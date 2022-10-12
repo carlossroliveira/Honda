@@ -14,7 +14,7 @@ import { Button } from '../../components/Button';
 // -------------------------------------------------
 // Context
 // -------------------------------------------------
-import { ThemeProviderApplication } from '../../context/contextApplication/ContextApplication';
+import { ThemeProviderApplication } from '../../contextMain/contextApplication/ContextApplication';
 // -------------------------------------------------
 // Styles
 // -------------------------------------------------
