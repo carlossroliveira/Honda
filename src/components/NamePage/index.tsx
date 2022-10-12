@@ -9,7 +9,7 @@ import { INamePageProps } from './types';
 
 export const NamePage = ({ title }: INamePageProps) => {
   useEffect(() => {
-    document.title = `Reload Health - ${title}`;
+    document.title = `Name - ${title}`;
   }, [title]);
   return <></>;
 };
