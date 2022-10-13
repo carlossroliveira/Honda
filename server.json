@@ -1,14 +1,53 @@
 {
   "info": [
     {
-      "id": 4100,
-      "name": "Coq10",
-      "brand": "NOW",
+      "id": 1000,
+      "name": "NXR 160 Bros ESDD",
+      "brand": "Honda",
       "score": 75,
-      "price": 100,
-      "capsuleAmount": 90,
-      "isInPack": true,
-      "healthGoals": [
+      "price": "17.100",
+      "amountOfFuel": "12.0",
+      "haveMoreColors": [
+        {
+          "imgOne": "https://cabralmotor.fbitsstatic.net/img/p/nxr-160-bros-esdd-70292/256766-1.jpg?w=1000&h=1000&v=no-change&qs=ignore",
+
+          "imgTwo": "https://cabralmotor.fbitsstatic.net/img/p/nxr-160-bros-esdd-70292/256988-1.jpg?w=1000&h=1000&v=no-change&qs=ignore"
+        }
+      ],
+      "ethanolFuel": true,
+      "maximumPower": [
+        {
+          "score": 25
+        },
+        {
+          "score": 75
+        }
+      ],
+      "maximumTorque": [
+        {
+          "score": 25
+        },
+        {
+          "score": 75
+        }
+      ]
+    },
+    {
+      "id": 2000,
+      "name": "CB 500X ABS",
+      "brand": "Honda",
+      "score": 95,
+      "price": "56.900",
+      "amountOfFuel": "17.7",
+      "haveMoreColors": [
+        {
+          "imgOne": "https://cabralmotor.fbitsstatic.net/img/p/cb-500x-abs-70280/256797-1.jpg?w=1000&h=1000&v=no-change&qs=ignore",
+
+          "imgTwo": "https://cabralmotor.fbitsstatic.net/img/p/cb-500x-abs-70280/256799-1.jpg?w=1000&h=1000&v=no-change&qs=ignore"
+        }
+      ],
+      "ethanolFuel": false,
+      "maximumPower": [
         {
           "score": 25
         },
@@ -19,7 +58,7 @@
           "score": 100
         }
       ],
-      "symptoms": [
+      "maximumTorque": [
         {
           "score": 100
         },
@@ -29,34 +68,49 @@
         {
           "score": 50
         }
-      ],
-      "hasPrecaution": false
+      ]
     },
     {
-      "id": 4101,
-      "name": "L-Glutamine 500mg Free Form 60vcap",
-      "brand": "NOW",
-      "score": 88,
-      "price": 13.99,
-      "capsuleAmount": 60,
-      "isInPack": true,
-      "healthGoals": [],
-      "symptoms": [
+      "id": 3000,
+      "name": "POP 110I",
+      "brand": "Honda",
+      "score": 55,
+      "price": "11.120",
+      "amountOfFuel": "4.2",
+      "haveMoreColors": [
         {
-          "score": 50
+          "imgOne": "https://cabralmotor.fbitsstatic.net/img/p/pop-110i-70297/256773-1.jpg?w=1000&h=1000&v=no-change&qs=ignore",
+
+          "imgTwo": "https://cabralmotor.fbitsstatic.net/img/p/pop-110i-70297/256774-2.jpg?w=1000&h=1000&v=no-change&qs=ignore"
         }
       ],
-      "hasPrecaution": false
+      "ethanolFuel": false,
+      "maximumPower": [
+        {
+          "score": 25
+        }
+      ],
+      "maximumTorque": []
     },
     {
-      "id": 4102,
-      "name": "Boswellia Extract Plus Turmeric Root Extract",
-      "brand": "NOW",
-      "score": 82,
-      "price": 21.99,
-      "capsuleAmount": 60,
-      "isInPack": true,
-      "healthGoals": [
+      "id": 4000,
+      "name": "CRF 1100L AFRICA TWIN",
+      "brand": "Honda",
+      "score": 100,
+      "price": "104.950",
+      "amountOfFuel": "24.8",
+      "haveMoreColors": [
+        {
+          "imgOne": "https://cabralmotor.fbitsstatic.net/img/p/crf-1100l-africa-twin-adventure-sport-es-70287/256754-4.jpg?w=1000&h=1000&v=no-change&qs=ignore",
+
+          "imgTwo": "https://cabralmotor.fbitsstatic.net/img/p/crf-1100l-africa-twin-adventure-sport-es-70287/256754-4.jpg?w=1000&h=1000&v=no-change&qs=ignore"
+        }
+      ],
+      "ethanolFuel": false,
+      "maximumPower": [
+        {
+          "score": 25
+        },
         {
           "score": 75
         },
@@ -64,145 +118,165 @@
           "score": 100
         }
       ],
-      "symptoms": [
-        {
-          "score": 50
-        }
-      ],
-      "hasPrecaution": false
-    },
-    {
-      "id": 4103,
-      "name": "100% Pur Huile Essentielle de Basilic",
-      "brand": "NOW",
-      "score": 72,
-      "price": 39.9,
-      "capsuleAmount": 180,
-      "isInPack": true,
-      "healthGoals": [
+      "maximumTorque": [
         {
           "score": 25
-        }
-      ],
-      "symptoms": [
-        {
-          "score": 50
-        }
-      ],
-      "hasPrecaution": true
-    },
-    {
-      "id": 4104,
-      "name": "100% Pur Huile Essentielle de Basilic",
-      "brand": "NOW",
-      "score": 72,
-      "price": 39.9,
-      "capsuleAmount": 180,
-      "isInPack": true,
-      "healthGoals": [],
-      "symptoms": [
-        {
-          "score": 50
-        }
-      ],
-      "hasPrecaution": true
-    },
-    {
-      "id": 4105,
-      "name": "Germe de Bl, 16 fl oz (473 ml)",
-      "brand": "NOW",
-      "score": 72,
-      "price": 39.9,
-      "capsuleAmount": 20,
-      "isInPack": true,
-      "healthGoals": [
+        },
         {
           "score": 75
         },
         {
-          "score": 25
-        }
-      ],
-      "symptoms": [
-        {
-          "score": 25
-        }
-      ],
-      "hasPrecaution": true
-    },
-    {
-      "id": 4106,
-      "name": "Essential Huile, Lemongrass Huile - 30 ml",
-      "brand": "NOW",
-      "score": 72,
-      "price": 59.9,
-      "capsuleAmount": 30,
-      "isInPack": true,
-      "healthGoals": [],
-      "symptoms": [
-        {
           "score": 100
         }
-      ],
-      "hasPrecaution": false
+      ]
     },
     {
-      "id": 4107,
-      "name": "Vein Supreme 90 Glules de Veg",
-      "brand": "NOW",
+      "id": 5000,
+      "name": "PCX 150 SPORT",
+      "brand": "Honda",
       "score": 65,
-      "price": 8.9,
-      "capsuleAmount": 30,
-      "isInPack": false,
-      "healthGoals": [
+      "price": "20.640",
+      "amountOfFuel": "8",
+      "haveMoreColors": [
+        {
+          "imgOne": "https://cabralmotor.fbitsstatic.net/img/p/pcx-150-sport-70296/256772-2.jpg?w=1000&h=1000&v=no-change&qs=ignore",
+
+          "imgTwo": "https://cabralmotor.fbitsstatic.net/img/p/pcx-150-sport-70296/256772-2.jpg?w=1000&h=1000&v=no-change&qs=ignore"
+        }
+      ],
+      "ethanolFuel": false,
+      "maximumPower": [
+        {
+          "score": 25
+        },
+        {
+          "score": 100
+        }
+      ],
+      "maximumTorque": [
+        {
+          "score": 25
+        },
+        {
+          "score": 75
+        }
+      ]
+    },
+    {
+      "id": 6000,
+      "name": "CG 160 START",
+      "brand": "Honda",
+      "score": 55,
+      "price": "15.800",
+      "amountOfFuel": "8",
+      "haveMoreColors": [
+        {
+          "imgOne": "https://cabralmotor.fbitsstatic.net/img/p/cg-160-start-70285/256748-1.jpg?w=1000&h=1000&v=no-change&qs=ignore",
+
+          "imgTwo": "https://cabralmotor.fbitsstatic.net/img/p/cg-160-start-70285/256749-3.jpg?w=1000&h=1000&v=no-change&qs=ignore"
+        }
+      ],
+      "ethanolFuel": false,
+      "maximumPower": [
+        {
+          "score": 25
+        }
+      ],
+      "maximumTorque": [
+        {
+          "score": 25
+        }
+      ]
+    },
+    {
+      "id": 7000,
+      "name": "CB 1000R ABS",
+      "brand": "Honda",
+      "score": 90,
+      "price": "86.300",
+      "amountOfFuel": "16.1",
+      "haveMoreColors": [
+        {
+          "imgOne": "https://cabralmotor.fbitsstatic.net/img/p/cb-1000r-abs-70276/256727-1.jpg?w=1000&h=1000&v=no-change&qs=ignore",
+
+          "imgTwo": "https://cabralmotor.fbitsstatic.net/img/p/cb-1000r-abs-70276/256728-1.jpg?w=1000&h=1000&v=no-change&qs=ignore"
+        }
+      ],
+      "ethanolFuel": false,
+      "maximumPower": [
+        {
+          "score": 25
+        },
+        {
+          "score": 100
+        }
+      ],
+      "maximumTorque": [
+        {
+          "score": 75
+        }
+      ]
+    },
+    {
+      "id": 8000,
+      "name": "CB 650R",
+      "brand": "Honda",
+      "score": 75,
+      "price": "55.900",
+      "amountOfFuel": "15.4",
+      "haveMoreColors": [
+        {
+          "imgOne": "https://cabralmotor.fbitsstatic.net/img/p/cb-650r-70281/256739-4.jpg?w=1000&h=1000&v=no-change&qs=ignore",
+
+          "imgTwo": "https://cabralmotor.fbitsstatic.net/img/p/cb-650r-70281/256740-4.jpg?w=1000&h=1000&v=no-change&qs=ignore"
+        }
+      ],
+      "ethanolFuel": false,
+      "maximumPower": [
+        {
+          "score": 25
+        },
+        {
+          "score": 100
+        }
+      ],
+      "maximumTorque": [
         {
           "score": 75
         },
         {
-          "score": 25
+          "score": 100
         }
-      ],
-      "symptoms": [
-        {
-          "score": 25
-        }
-      ],
-      "hasPrecaution": false
+      ]
     },
     {
-      "id": 4108,
-      "name": "Cholestrol Support 90",
-      "brand": "NOW",
-      "score": 42,
-      "price": 17.8,
-      "capsuleAmount": 120,
-      "isInPack": false,
-      "healthGoals": [
+      "id": 9000,
+      "name": "ADV 150",
+      "brand": "Honda",
+      "score": 65,
+      "price": "26.750",
+      "amountOfFuel": "8",
+      "haveMoreColors": [
+        {
+          "imgOne": "https://cabralmotor.fbitsstatic.net/img/p/adv-150-70273/256981-1.jpg?w=1000&h=1000&v=no-change&qs=ignore",
+
+          "imgTwo": "https://cabralmotor.fbitsstatic.net/img/p/adv-150-70273/256980-1.jpg?w=1000&h=1000&v=no-change&qs=ignore"
+        }
+      ],
+      "ethanolFuel": false,
+      "maximumPower": [
         {
           "score": 25
+        }
+      ],
+      "maximumTorque": [
+        {
+          "score": 75
         },
         {
-          "score": 25
+          "score": 100
         }
-      ],
-      "symptoms": [],
-      "hasPrecaution": true
-    },
-    {
-      "id": 4108,
-      "name": "Cal-Mag With B-Complex And Vitamin C",
-      "brand": "NOW",
-      "score": 21,
-      "price": 13.99,
-      "capsuleAmount": 100,
-      "isInPack": false,
-      "healthGoals": [],
-      "symptoms": [
-        {
-          "score": 25
-        }
-      ],
-      "hasPrecaution": true
+      ]
     }
   ]
 }

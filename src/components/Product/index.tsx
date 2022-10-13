@@ -1,8 +1,10 @@
 // -------------------------------------------------
 // Packages
 // -------------------------------------------------
-import React from 'react';
+import React, { useState } from 'react';
 import { AiOutlinePlusCircle } from 'react-icons/ai';
+import { BsLightningCharge } from 'react-icons/bs';
+import { BiTrendingUp } from 'react-icons/bi';
 // -------------------------------------------------
 // Components
 // -------------------------------------------------
@@ -12,15 +14,6 @@ import { Number } from '../../components/Number';
 // Context
 // -------------------------------------------------
 import { useMyHookApplication } from '../../contextMain/contextApplication/ContextApplication';
-// -------------------------------------------------
-// Images
-// -------------------------------------------------
-import photoOne from '../../assets/Shape.svg';
-import photoTwo from '../../assets/Vectorr.svg';
-import photoThree from '../../assets/fluent_pill-20-filled.svg';
-import photoFour from '../../assets/Picture2 (image).svg';
-import photoFive from '../../assets/Vector (1).svg';
-import photoSix from '../../assets/Vector.svg';
 // -------------------------------------------------
 // Styles
 // -------------------------------------------------
@@ -32,11 +25,10 @@ import {
   DivProduct,
   DivThreeSC,
   DivTwoSC,
-  ImgOneSC,
   ImgThreeSC,
-  ImgTwoSC,
   LoaderSC,
   ParagraphThreeSC,
+  SpanBackOneSC,
   SpanColorSC,
   SpanOneSC,
   SpanSC,
@@ -49,6 +41,8 @@ import { IProductProps } from '../../contextMain/contextApplication/types';
 
 export const Product = () => {
   const info = useMyHookApplication();
+
+  const [color, setColor] = useState(true);
 
   const scoreSearch = (item: IProductProps | any, list: string) => {
     return item[list]
@@ -76,63 +70,74 @@ export const Product = () => {
             <DivOneSC>
               <div>
                 <DivImagesSC>
-                  {item.isInPack && (
-                    <ImgOneSC>
-                      <img src={photoSix} alt="logo" />
-                    </ImgOneSC>
-                  )}
-
-                  {item.hasPrecaution && (
-                    <ImgTwoSC>
-                      <img src={photoFive} alt="logo" />
-                    </ImgTwoSC>
-                  )}
+                  <ImgThreeSC>
+                    <ParagraphThreeSC>
+                      <SpanBackOneSC
+                        onClick={() => setColor((color) => !color)}
+                      >
+                        Cor
+                      </SpanBackOneSC>
+                    </ParagraphThreeSC>
+                  </ImgThreeSC>
 
                   <ImgThreeSC>
-                    <img src={photoThree} alt="logo" />
-                    <ParagraphThreeSC>{item.capsuleAmount}</ParagraphThreeSC>
+                    <ParagraphThreeSC>
+                      {item.amountOfFuel.replace('.', ',')} Litros
+                    </ParagraphThreeSC>
                   </ImgThreeSC>
+
+                  {item.ethanolFuel && (
+                    <ImgThreeSC>
+                      <ParagraphThreeSC>
+                        <span>Etanol</span>
+                      </ParagraphThreeSC>
+                    </ImgThreeSC>
+                  )}
                 </DivImagesSC>
 
-                <BrandSC>{item.brand}</BrandSC>
+                <BrandSC>Marca: {item.brand}</BrandSC>
 
-                <SpanOneSC>{item.name}</SpanOneSC>
+                <SpanOneSC>Nome: {item.name}</SpanOneSC>
 
                 <SpanOneSC>
-                  Votré compatibilité{' '}
-                  <SpanColorSC>{item.score}/100</SpanColorSC>
+                  Pontuação: <SpanColorSC>{item.score}/100</SpanColorSC>
                 </SpanOneSC>
               </div>
 
               <DivProduct>
-                <img src={photoFour} alt="logo" />
+                <img
+                  src={`${item.haveMoreColors?.map((itens) =>
+                    color ? itens?.imgOne : itens?.imgTwo,
+                  )}`}
+                  alt="logo"
+                />
               </DivProduct>
             </DivOneSC>
 
             <DivTwoSC>
               <SubDivTwoSC>
                 <SubMiniDivTwoSC>
-                  <SpanSC>Health goals</SpanSC>
-                  <Number score={item.healthGoals.length} />
+                  <SpanSC>Potência Máxima</SpanSC>
+                  <Number score={item.maximumPower.length} />
                 </SubMiniDivTwoSC>
 
-                <SpanTwoSC>Améliorer les performances</SpanTwoSC>
+                <SpanTwoSC>Corresponde ao valor máximo</SpanTwoSC>
 
                 <SubMiniDivTwoSC>
-                  <SpanSC>Symptoms</SpanSC>
-                  <Number score={item.symptoms.length} />
+                  <SpanSC>Torque Máximo</SpanSC>
+                  <Number score={item.maximumTorque.length} />
                 </SubMiniDivTwoSC>
 
-                <SpanTwoSC>Mémorie</SpanTwoSC>
+                <SpanTwoSC>Quilograma força por metro</SpanTwoSC>
               </SubDivTwoSC>
 
               <SubDivThreeSC>
-                <LoaderSC value={scoreSearch(item, 'healthGoals').score}>
-                  <img src={photoTwo} alt="Health goals logo" />
+                <LoaderSC value={scoreSearch(item, 'maximumPower').score}>
+                  <BsLightningCharge />
                 </LoaderSC>
 
-                <LoaderSC value={scoreSearch(item, 'symptoms').score}>
-                  <img src={photoOne} alt="Symptoms logo" />
+                <LoaderSC value={scoreSearch(item, 'maximumTorque').score}>
+                  <BiTrendingUp />
                 </LoaderSC>
               </SubDivThreeSC>
             </DivTwoSC>
@@ -144,7 +149,7 @@ export const Product = () => {
                 onClick={() => {
                   info.handleValue(), info.setArray([...info.array, item.name]);
                 }}
-                text={`${String(item.price).replace('.', ',')} €`}
+                text={`${String(item.price).replace('.', ',')} `}
               />
             </DivThreeSC>
           </DivMainSC>

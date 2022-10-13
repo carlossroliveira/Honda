@@ -12,14 +12,16 @@ export interface IProductProps {
   brand: string;
   score: number;
   price: string;
-  capsuleAmount: number;
-  isInPack: boolean;
-  hasPrecaution: boolean;
-  hasSynergy: boolean;
-  healthGoals: {
+  amountOfFuel: string;
+  haveMoreColors: {
+    imgOne: string;
+    imgTwo: string;
+  }[];
+  ethanolFuel: boolean;
+  maximumPower: {
     score: number;
   }[];
-  symptoms: {
+  maximumTorque: {
     score: number;
   }[];
 }

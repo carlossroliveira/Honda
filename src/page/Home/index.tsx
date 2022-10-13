@@ -15,8 +15,8 @@ import { useMyHookApplication } from '../../contextMain/contextApplication/Conte
 // -------------------------------------------------
 // Images
 // -------------------------------------------------
-import photoOne from '../../assets/logo.svg';
-import photoTwo from '../../assets/Group 377.svg';
+/* import photoOne from '../../assets/logo.svg';
+import photoTwo from '../../assets/Group 377.svg'; */
 // -------------------------------------------------
 // Styles
 // -------------------------------------------------
@@ -40,15 +40,13 @@ export const Home = (): JSX.Element => {
   return (
     <ContainerSC>
       <HeaderSC>
-        <div>
-          <img src={photoOne} alt="Company logo" />
-        </div>
+        <div>{/*  <img src={photoOne} alt="Company logo" /> */}</div>
 
         <DivHeaderSC>
           <Number score={info.values} />
 
           <LoaderSC value={info.values}>
-            <img src={photoTwo} alt="Cart logo" />
+            {/*    <img src={photoTwo} alt="Cart logo" /> */}
           </LoaderSC>
         </DivHeaderSC>
       </HeaderSC>

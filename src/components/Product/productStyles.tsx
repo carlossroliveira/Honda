@@ -29,46 +29,12 @@ export const DivImagesSC = styled.div`
   }
 `;
 
-export const ImgOneSC = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 24px;
-  height: 24px;
-  border-radius: 3px;
-
-  background: linear-gradient(165.98deg, #3135c6 14.08%, #00aaff 89.86%);
-
-  transition: 200ms linear;
-
-  &:hover {
-    ${EFFECT_STYLES}
-  }
-`;
-
-export const ImgTwoSC = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 24px;
-  height: 24px;
-  border-radius: 3px;
-
-  transition: 200ms linear;
-
-  &:hover {
-    ${EFFECT_STYLES}
-  }
-`;
-
 export const ImgThreeSC = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
 
-  width: 46px;
+  width: fit-content;
   height: 24px;
   border-radius: 4px;
 
@@ -92,6 +58,19 @@ export const ParagraphThreeSC = styled.p`
   line-height: 22px;
 
   color: ${({ theme }) => theme.color.primary};
+
+  padding: 5px;
+  display: flex;
+
+  span {
+    margin-right: 5px;
+  }
+`;
+
+export const SpanBackOneSC = styled.span`
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 export const SpanColorSC = styled.span`
@@ -118,6 +97,10 @@ export const BrandSC = styled.p`
 
 export const DivProduct = styled.div`
   transition: 200ms linear;
+  margin-right: 3rem;
+  img {
+    width: 104px;
+  }
 
   &:hover {
     ${EFFECT_STYLES}
