@@ -24,6 +24,7 @@ export interface IProductProps {
   maximumTorque: {
     score: number;
   }[];
+  logo: string;
 }
 
 export interface IContextApplication {

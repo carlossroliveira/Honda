@@ -28,6 +28,10 @@ export const HeaderSC = styled.header`
   padding: 0 2rem;
 
   background: linear-gradient(165.98deg, #3135c6 14.08%, #00aaff 89.86%);
+
+  img {
+    width: 10rem;
+  }
 `;
 
 export const DivHeaderSC = styled.div`

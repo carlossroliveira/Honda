@@ -2,6 +2,7 @@
 // Packages
 // -------------------------------------------------
 import React from 'react';
+import { BsCartX, BsCartCheck } from 'react-icons/bs';
 import { MdOutlineLightMode, MdOutlineNightlight } from 'react-icons/md';
 // -------------------------------------------------
 // Components
@@ -12,11 +13,6 @@ import { Number } from '../../components/Number';
 // -------------------------------------------------
 import { useMyHook } from '../../contextMain/themes/ContextTheme';
 import { useMyHookApplication } from '../../contextMain/contextApplication/ContextApplication';
-// -------------------------------------------------
-// Images
-// -------------------------------------------------
-/* import photoOne from '../../assets/logo.svg';
-import photoTwo from '../../assets/Group 377.svg'; */
 // -------------------------------------------------
 // Styles
 // -------------------------------------------------
@@ -40,20 +36,27 @@ export const Home = (): JSX.Element => {
   return (
     <ContainerSC>
       <HeaderSC>
-        <div>{/*  <img src={photoOne} alt="Company logo" /> */}</div>
+        <div>
+          <img
+            src={
+              'https://www.honda.com.br/sites/hda/themes/hondahda/assets/img/honda-horizontal.svg'
+            }
+            alt="logo"
+          />
+        </div>
 
         <DivHeaderSC>
           <Number score={info.values} />
 
           <LoaderSC value={info.values}>
-            {/*    <img src={photoTwo} alt="Cart logo" /> */}
+            {info.values > 0 ? <BsCartCheck /> : <BsCartX />}
           </LoaderSC>
         </DivHeaderSC>
       </HeaderSC>
 
       <InfoSC>
         <DivParagraphSC>
-          <ParagraphInfoSC weight>Best products</ParagraphInfoSC>
+          <ParagraphInfoSC weight>As melhores motos!</ParagraphInfoSC>
 
           <span onClick={() => infoTheme.handleThemes()}>
             {infoTheme?.themes.title === 'light' ? (
@@ -65,7 +68,7 @@ export const Home = (): JSX.Element => {
         </DivParagraphSC>
 
         <ParagraphInfoSC weight={false}>
-          From a base of <SpanInfoSC> 3456 products</SpanInfoSC>
+          mais de <SpanInfoSC> 1000 </SpanInfoSC> motos vendidas por dia
         </ParagraphInfoSC>
       </InfoSC>
 
