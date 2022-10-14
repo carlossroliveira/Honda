@@ -42,7 +42,13 @@ import { IProductProps } from '../../contextMain/contextApplication/types';
 export const Product = () => {
   const info = useMyHookApplication();
 
-  const [color, setColor] = useState(true);
+  const [background, setBackground] = useState<boolean>(false);
+  const [identifier, setIdentifier] = useState<number | undefined>();
+
+  const motorcycleIdentifier = (id: number) => {
+    setIdentifier(id);
+    setBackground(!background);
+  };
 
   const scoreSearch = (item: IProductProps | any, list: string) => {
     return item[list]
@@ -73,7 +79,7 @@ export const Product = () => {
                   <ImgThreeSC>
                     <ParagraphThreeSC>
                       <SpanBackOneSC
-                        onClick={() => setColor((color) => !color)}
+                        onClick={() => motorcycleIdentifier(item.id)}
                       >
                         Cor
                       </SpanBackOneSC>
@@ -107,7 +113,9 @@ export const Product = () => {
               <DivProduct>
                 <img
                   src={`${item.haveMoreColors?.map((itens) =>
-                    color ? itens?.imgOne : itens?.imgTwo,
+                    identifier === item.id && background
+                      ? itens?.imgOne
+                      : itens?.imgTwo,
                   )}`}
                   alt="logo"
                 />
