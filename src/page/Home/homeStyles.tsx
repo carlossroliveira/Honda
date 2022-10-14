@@ -27,7 +27,16 @@ export const HeaderSC = styled.header`
 
   padding: 0 2rem;
 
-  background: linear-gradient(165.98deg, #3135c6 14.08%, #00aaff 89.86%);
+  background: rgb(248, 248, 248);
+  background: linear-gradient(
+    45deg,
+    rgba(248, 248, 248, 1) 5%,
+    rgba(204, 0, 0, 1) 25%
+  );
+
+  @media (max-width: 768px) {
+    background: transparent;
+  }
 
   img {
     width: 10rem;

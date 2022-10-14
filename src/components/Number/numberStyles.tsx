@@ -4,7 +4,7 @@
 import styled from 'styled-components';
 
 export const SPanSC = styled.span`
-  background: linear-gradient(180.32deg, #2effaf 15.34%, #00aaff 98.15%);
+  background: linear-gradient(180.32deg, #f5f7fe 15.34%, #393e46 98.15%);
 
   box-shadow: ${({ theme }) => theme.boxShadow.secondary};
 
