@@ -9,10 +9,6 @@ import { useNavigate } from 'react-router-dom';
 import { Button } from '../../components/Button';
 import { NamePage } from '../../components/NamePage';
 // -------------------------------------------------
-// Images
-// -------------------------------------------------
-import photo from '../../assets/imageError.png';
-// -------------------------------------------------
 // Styles
 // -------------------------------------------------
 import {
@@ -30,9 +26,7 @@ export const Error = (): JSX.Element => {
     <ContainerSC>
       <NamePage title="Error" />
 
-      <DivOneSC>
-        <img src={photo} alt="image error" />
-      </DivOneSC>
+      <DivOneSC>{/*   <img src={photo} alt="image error" /> */}</DivOneSC>
 
       <DivTwoSC>
         <TitleSC>This page does not exist!</TitleSC>

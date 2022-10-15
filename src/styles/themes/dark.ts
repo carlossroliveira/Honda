@@ -5,7 +5,7 @@ export default {
     fontDefault: 'Roboto, sans-serif',
   },
   color: {
-    primary: '#00aaff',
+    primary: '#ff8d66',
     secondary: '#393E46',
     tertiary: '',
     quaternary: '#F5F7FE',
@@ -17,7 +17,8 @@ export default {
     quaternary: '#F5F7FE',
   },
   boxShadow: {
-    primary: '0px 6px 6px #C6C9D6',
+    primary:
+      'rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset',
     secondary: '0px 2px 2px rgba(84, 89, 118, 0.46)',
   },
 };

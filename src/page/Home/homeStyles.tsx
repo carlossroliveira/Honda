@@ -27,20 +27,23 @@ export const HeaderSC = styled.header`
 
   padding: 0 2rem;
 
-  background: rgb(248, 248, 248);
+  background: rgb(231, 68, 40);
   background: linear-gradient(
-    45deg,
-    rgba(248, 248, 248, 1) 5%,
-    rgba(204, 0, 0, 1) 25%
+    212deg,
+    rgba(231, 68, 40, 1) 40%,
+    rgba(56, 56, 56, 1) 90%
   );
 
   @media (max-width: 768px) {
-    background: transparent;
+    background: #383838;
   }
 
   img {
     width: 10rem;
+    color: blue;
   }
+
+  box-shadow: ${({ theme }) => theme.boxShadow.primary};
 `;
 
 export const DivHeaderSC = styled.div`

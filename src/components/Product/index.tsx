@@ -71,97 +71,95 @@ export const Product = () => {
   return (
     <>
       {info?.data?.map((item: IProductProps) => (
-        <>
-          <DivMainSC key={item.id}>
-            <DivOneSC>
-              <div>
-                <DivImagesSC>
+        <DivMainSC key={item.id}>
+          <DivOneSC>
+            <div>
+              <DivImagesSC>
+                <ImgThreeSC>
+                  <ParagraphThreeSC>
+                    <SpanBackOneSC
+                      onClick={() => motorcycleIdentifier(item.id)}
+                    >
+                      Cor
+                    </SpanBackOneSC>
+                  </ParagraphThreeSC>
+                </ImgThreeSC>
+
+                <ImgThreeSC>
+                  <ParagraphThreeSC>
+                    {item.amountOfFuel.replace('.', ',')} Litros
+                  </ParagraphThreeSC>
+                </ImgThreeSC>
+
+                {item.ethanolFuel && (
                   <ImgThreeSC>
                     <ParagraphThreeSC>
-                      <SpanBackOneSC
-                        onClick={() => motorcycleIdentifier(item.id)}
-                      >
-                        Cor
-                      </SpanBackOneSC>
+                      <span>Etanol</span>
                     </ParagraphThreeSC>
                   </ImgThreeSC>
+                )}
+              </DivImagesSC>
 
-                  <ImgThreeSC>
-                    <ParagraphThreeSC>
-                      {item.amountOfFuel.replace('.', ',')} Litros
-                    </ParagraphThreeSC>
-                  </ImgThreeSC>
+              <BrandSC>Marca: {item.brand}</BrandSC>
 
-                  {item.ethanolFuel && (
-                    <ImgThreeSC>
-                      <ParagraphThreeSC>
-                        <span>Etanol</span>
-                      </ParagraphThreeSC>
-                    </ImgThreeSC>
-                  )}
-                </DivImagesSC>
+              <SpanOneSC>Nome: {item.name}</SpanOneSC>
 
-                <BrandSC>Marca: {item.brand}</BrandSC>
+              <SpanOneSC>
+                Pontuação: <SpanColorSC>{item.score}/100</SpanColorSC>
+              </SpanOneSC>
+            </div>
 
-                <SpanOneSC>Nome: {item.name}</SpanOneSC>
-
-                <SpanOneSC>
-                  Pontuação: <SpanColorSC>{item.score}/100</SpanColorSC>
-                </SpanOneSC>
-              </div>
-
-              <DivProduct>
-                <img
-                  src={`${item.haveMoreColors?.map((itens) =>
-                    identifier === item.id && background
-                      ? itens?.imgOne
-                      : itens?.imgTwo,
-                  )}`}
-                  alt="logo"
-                />
-              </DivProduct>
-            </DivOneSC>
-
-            <DivTwoSC>
-              <SubDivTwoSC>
-                <SubMiniDivTwoSC>
-                  <SpanSC>Potência Máxima</SpanSC>
-                  <Number score={item.maximumPower.length} />
-                </SubMiniDivTwoSC>
-
-                <SpanTwoSC>Corresponde ao valor máximo</SpanTwoSC>
-
-                <SubMiniDivTwoSC>
-                  <SpanSC>Torque Máximo</SpanSC>
-                  <Number score={item.maximumTorque.length} />
-                </SubMiniDivTwoSC>
-
-                <SpanTwoSC>Quilograma força por metro</SpanTwoSC>
-              </SubDivTwoSC>
-
-              <SubDivThreeSC>
-                <LoaderSC value={scoreSearch(item, 'maximumPower').score}>
-                  <BsLightningCharge />
-                </LoaderSC>
-
-                <LoaderSC value={scoreSearch(item, 'maximumTorque').score}>
-                  <BiTrendingUp />
-                </LoaderSC>
-              </SubDivThreeSC>
-            </DivTwoSC>
-
-            <DivThreeSC>
-              <Button
-                variant={'default'}
-                icon={<AiOutlinePlusCircle />}
-                onClick={() => {
-                  info.handleValue(), info.setArray([...info.array, item.name]);
-                }}
-                text={`${String(item.price).replace('.', ',')} `}
+            <DivProduct>
+              <img
+                src={`${item.haveMoreColors?.map((itens) =>
+                  identifier === item.id && background
+                    ? itens?.imgOne
+                    : itens?.imgTwo,
+                )}`}
+                alt="logo"
               />
-            </DivThreeSC>
-          </DivMainSC>
-        </>
+            </DivProduct>
+          </DivOneSC>
+
+          <DivTwoSC>
+            <SubDivTwoSC>
+              <SubMiniDivTwoSC>
+                <SpanSC>Potência Máxima</SpanSC>
+                <Number score={item.maximumPower.length} />
+              </SubMiniDivTwoSC>
+
+              <SpanTwoSC>Corresponde ao valor máximo</SpanTwoSC>
+
+              <SubMiniDivTwoSC>
+                <SpanSC>Torque Máximo</SpanSC>
+                <Number score={item.maximumTorque.length} />
+              </SubMiniDivTwoSC>
+
+              <SpanTwoSC>Quilograma força por metro</SpanTwoSC>
+            </SubDivTwoSC>
+
+            <SubDivThreeSC>
+              <LoaderSC value={scoreSearch(item, 'maximumPower').score}>
+                <BsLightningCharge />
+              </LoaderSC>
+
+              <LoaderSC value={scoreSearch(item, 'maximumTorque').score}>
+                <BiTrendingUp />
+              </LoaderSC>
+            </SubDivThreeSC>
+          </DivTwoSC>
+
+          <DivThreeSC>
+            <Button
+              variant={'default'}
+              icon={<AiOutlinePlusCircle />}
+              onClick={() => {
+                info.handleValue(), info.setArray([...info.array, item.name]);
+              }}
+              text={`${String(item.price).replace('.', ',')} `}
+            />
+          </DivThreeSC>
+        </DivMainSC>
       ))}
     </>
   );

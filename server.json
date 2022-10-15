@@ -2,16 +2,16 @@
   "info": [
     {
       "id": 1000,
-      "name": "NXR 160 Bros ESDD",
+      "name": "CB 250F Twister ABS",
       "brand": "Honda",
       "score": 75,
-      "price": "17.100",
-      "amountOfFuel": "12.0",
+      "price": "19.280",
+      "amountOfFuel": "16.5",
       "haveMoreColors": [
         {
-          "imgOne": "https://cabralmotor.fbitsstatic.net/img/p/nxr-160-bros-esdd-70292/256766-1.jpg?w=1000&h=1000&v=no-change&qs=ignore",
+          "imgOne": "CB-Twister-cinza.png",
 
-          "imgTwo": "https://cabralmotor.fbitsstatic.net/img/p/nxr-160-bros-esdd-70292/256988-1.jpg?w=1000&h=1000&v=no-change&qs=ignore"
+          "imgTwo": "CB-Twister-vermelha.png"
         }
       ],
       "ethanolFuel": true,
@@ -34,16 +34,16 @@
     },
     {
       "id": 2000,
-      "name": "CB 500X ABS",
+      "name": "CB 500F",
       "brand": "Honda",
       "score": 95,
-      "price": "56.900",
-      "amountOfFuel": "17.7",
+      "price": "39.100",
+      "amountOfFuel": "17.1",
       "haveMoreColors": [
         {
-          "imgOne": "https://cabralmotor.fbitsstatic.net/img/p/cb-500x-abs-70280/256797-1.jpg?w=1000&h=1000&v=no-change&qs=ignore",
+          "imgOne": "CB500-F-cinza_19.png",
 
-          "imgTwo": "https://cabralmotor.fbitsstatic.net/img/p/cb-500x-abs-70280/256799-1.jpg?w=1000&h=1000&v=no-change&qs=ignore"
+          "imgTwo": "CB500-F-vermelha_19.png"
         }
       ],
       "ethanolFuel": false,
@@ -72,16 +72,16 @@
     },
     {
       "id": 3000,
-      "name": "POP 110I",
+      "name": "CB 650R",
       "brand": "Honda",
       "score": 55,
-      "price": "11.120",
-      "amountOfFuel": "4.2",
+      "price": "48.440",
+      "amountOfFuel": "15.4",
       "haveMoreColors": [
         {
-          "imgOne": "https://cabralmotor.fbitsstatic.net/img/p/pop-110i-70297/256773-1.jpg?w=1000&h=1000&v=no-change&qs=ignore",
+          "imgOne": "CB650R_360_preta_15.png",
 
-          "imgTwo": "https://cabralmotor.fbitsstatic.net/img/p/pop-110i-70297/256774-2.jpg?w=1000&h=1000&v=no-change&qs=ignore"
+          "imgTwo": "CB650R_360_vermelha_15.png"
         }
       ],
       "ethanolFuel": false,
@@ -94,16 +94,16 @@
     },
     {
       "id": 4000,
-      "name": "CRF 1100L AFRICA TWIN",
+      "name": "CB 1000R",
       "brand": "Honda",
-      "score": 100,
-      "price": "104.950",
-      "amountOfFuel": "24.8",
+      "score": 90,
+      "price": "76.570",
+      "amountOfFuel": "16.1",
       "haveMoreColors": [
         {
-          "imgOne": "https://cabralmotor.fbitsstatic.net/img/p/crf-1100l-africa-twin-adventure-sport-es-70287/256754-4.jpg?w=1000&h=1000&v=no-change&qs=ignore",
+          "imgOne": "CB100R-branca_0000_19.png",
 
-          "imgTwo": "https://cabralmotor.fbitsstatic.net/img/p/crf-1100l-africa-twin-adventure-sport-es-70287/256754-4.jpg?w=1000&h=1000&v=no-change&qs=ignore"
+          "imgTwo": "CB100R-VERMELHA_0000_19.png"
         }
       ],
       "ethanolFuel": false,
@@ -132,16 +132,16 @@
     },
     {
       "id": 5000,
-      "name": "PCX 150 SPORT",
+      "name": "CB 1000R Black Edition",
       "brand": "Honda",
-      "score": 65,
-      "price": "20.640",
-      "amountOfFuel": "8",
+      "score": 100,
+      "price": "85.170",
+      "amountOfFuel": "16.1",
       "haveMoreColors": [
         {
-          "imgOne": "https://cabralmotor.fbitsstatic.net/img/p/pcx-150-sport-70296/256772-2.jpg?w=1000&h=1000&v=no-change&qs=ignore",
+          "imgOne": null,
 
-          "imgTwo": "https://cabralmotor.fbitsstatic.net/img/p/pcx-150-sport-70296/256772-2.jpg?w=1000&h=1000&v=no-change&qs=ignore"
+          "imgTwo": "CB-1000R-Black-Edition.png"
         }
       ],
       "ethanolFuel": false,
@@ -164,16 +164,16 @@
     },
     {
       "id": 6000,
-      "name": "CG 160 START",
+      "name": "CBR 650R",
       "brand": "Honda",
       "score": 55,
-      "price": "15.800",
-      "amountOfFuel": "8",
+      "price": "50.900",
+      "amountOfFuel": "15.4",
       "haveMoreColors": [
         {
-          "imgOne": "https://cabralmotor.fbitsstatic.net/img/p/cg-160-start-70285/256748-1.jpg?w=1000&h=1000&v=no-change&qs=ignore",
+          "imgOne": "CBR-650R-cinza.png",
 
-          "imgTwo": "https://cabralmotor.fbitsstatic.net/img/p/cg-160-start-70285/256749-3.jpg?w=1000&h=1000&v=no-change&qs=ignore"
+          "imgTwo": "CBR-650R-vermelha.png"
         }
       ],
       "ethanolFuel": false,
@@ -190,16 +190,16 @@
     },
     {
       "id": 7000,
-      "name": "CB 1000R ABS",
+      "name": "CBR 1000RR-R FIREBLADE SP",
       "brand": "Honda",
-      "score": 90,
-      "price": "86.300",
+      "score": 100,
+      "price": "160.590",
       "amountOfFuel": "16.1",
       "haveMoreColors": [
         {
-          "imgOne": "https://cabralmotor.fbitsstatic.net/img/p/cb-1000r-abs-70276/256727-1.jpg?w=1000&h=1000&v=no-change&qs=ignore",
+          "imgOne": "CBR-1000RR-R-preta.png",
 
-          "imgTwo": "https://cabralmotor.fbitsstatic.net/img/p/cb-1000r-abs-70276/256728-1.jpg?w=1000&h=1000&v=no-change&qs=ignore"
+          "imgTwo": "CBR-1000RR-R-vermelha.png"
         }
       ],
       "ethanolFuel": false,
@@ -219,16 +219,16 @@
     },
     {
       "id": 8000,
-      "name": "CB 650R",
+      "name": "X-ADV",
       "brand": "Honda",
-      "score": 75,
-      "price": "55.900",
-      "amountOfFuel": "15.4",
+      "score": 85,
+      "price": "87.627",
+      "amountOfFuel": "13.2",
       "haveMoreColors": [
         {
-          "imgOne": "https://cabralmotor.fbitsstatic.net/img/p/cb-650r-70281/256739-4.jpg?w=1000&h=1000&v=no-change&qs=ignore",
+          "imgOne": "X-ADV-cinza.png",
 
-          "imgTwo": "https://cabralmotor.fbitsstatic.net/img/p/cb-650r-70281/256740-4.jpg?w=1000&h=1000&v=no-change&qs=ignore"
+          "imgTwo": "X-ADV-vermelha.png"
         }
       ],
       "ethanolFuel": false,
@@ -251,16 +251,16 @@
     },
     {
       "id": 9000,
-      "name": "ADV 150",
+      "name": "Honda ADV",
       "brand": "Honda",
       "score": 65,
-      "price": "26.750",
+      "price": "21.790",
       "amountOfFuel": "8",
       "haveMoreColors": [
         {
-          "imgOne": "https://cabralmotor.fbitsstatic.net/img/p/adv-150-70273/256981-1.jpg?w=1000&h=1000&v=no-change&qs=ignore",
+          "imgOne": "Honda-ADV-branca.png",
 
-          "imgTwo": "https://cabralmotor.fbitsstatic.net/img/p/adv-150-70273/256980-1.jpg?w=1000&h=1000&v=no-change&qs=ignore"
+          "imgTwo": "Honda-ADV-vermelha.png"
         }
       ],
       "ethanolFuel": false,

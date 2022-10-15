@@ -23,10 +23,10 @@ export const DivOneSC = styled.div`
     margin: auto;
   }
 
-  background-image: url('./backgroundError.png');
+  /*  background-image: url('./backgroundError.png');
   background-position: top right;
   background-repeat: no-repeat;
-  background-size: 40px 100%;
+  background-size: 40px 100%; */
 `;
 
 export const DivTwoSC = styled.div`

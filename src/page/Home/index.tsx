@@ -8,6 +8,7 @@ import { MdOutlineLightMode, MdOutlineNightlight } from 'react-icons/md';
 // Components
 // -------------------------------------------------
 import { Number } from '../../components/Number';
+import { Product } from '../../components/Product';
 // -------------------------------------------------
 // Context
 // -------------------------------------------------
@@ -27,7 +28,6 @@ import {
   LoaderSC,
   DivParagraphSC,
 } from './homeStyles';
-import { Product } from '../../components/Product';
 
 export const Home = (): JSX.Element => {
   const infoTheme = useMyHook();
@@ -68,7 +68,7 @@ export const Home = (): JSX.Element => {
         </DivParagraphSC>
 
         <ParagraphInfoSC weight={false}>
-          mais de <SpanInfoSC> 1000 </SpanInfoSC> motos vendidas por dia
+          mais de <SpanInfoSC> 1000 </SpanInfoSC> motos vendidas por dia.
         </ParagraphInfoSC>
       </InfoSC>
 
