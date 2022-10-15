@@ -25,7 +25,9 @@ export const HeaderSC = styled.header`
   align-items: center;
   justify-content: space-between;
 
-  padding: 0 2rem;
+  position: fixed;
+  padding: 10px 2rem;
+  width: -webkit-fill-available;
 
   background: rgb(231, 68, 40);
   background: linear-gradient(

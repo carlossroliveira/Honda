@@ -28,6 +28,7 @@ import {
   LoaderSC,
   DivParagraphSC,
 } from './homeStyles';
+import { Footer } from '../../components/Footer';
 
 export const Home = (): JSX.Element => {
   const infoTheme = useMyHook();
@@ -74,6 +75,8 @@ export const Home = (): JSX.Element => {
 
       <MainSC>
         <Product />
+
+        <Footer />
       </MainSC>
     </ContainerSC>
   );

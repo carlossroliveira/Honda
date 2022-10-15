@@ -11,24 +11,6 @@ export const ContainerSC = styled.section`
   justify-content: center;
 `;
 
-export const DivOneSC = styled.div`
-  ${STYLES_DEFAULT}
-
-  @media (max-width: 768px) {
-    display: none;
-  }
-
-  img {
-    height: 30rem;
-    margin: auto;
-  }
-
-  /*  background-image: url('./backgroundError.png');
-  background-position: top right;
-  background-repeat: no-repeat;
-  background-size: 40px 100%; */
-`;
-
 export const DivTwoSC = styled.div`
   ${STYLES_DEFAULT}
 

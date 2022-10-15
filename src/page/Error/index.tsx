@@ -11,13 +11,7 @@ import { NamePage } from '../../components/NamePage';
 // -------------------------------------------------
 // Styles
 // -------------------------------------------------
-import {
-  ContainerSC,
-  DivOneSC,
-  DivTwoSC,
-  ParagraphSC,
-  TitleSC,
-} from './errorStyles';
+import { ContainerSC, DivTwoSC, ParagraphSC, TitleSC } from './errorStyles';
 
 export const Error = (): JSX.Element => {
   const navigate = useNavigate();
@@ -26,12 +20,10 @@ export const Error = (): JSX.Element => {
     <ContainerSC>
       <NamePage title="Error" />
 
-      <DivOneSC>{/*   <img src={photo} alt="image error" /> */}</DivOneSC>
-
       <DivTwoSC>
-        <TitleSC>This page does not exist!</TitleSC>
+        <TitleSC>Está página não existe!</TitleSC>
 
-        <ParagraphSC>Click back button</ParagraphSC>
+        <ParagraphSC>Clique no botão voltar</ParagraphSC>
 
         <Button
           shadow
