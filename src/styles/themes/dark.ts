@@ -6,14 +6,14 @@ export default {
   },
   color: {
     primary: '#ff8d66',
-    secondary: '#393E46',
-    tertiary: '',
+    secondary: '#F5F7FE',
+    tertiary: '#F5F7FE',
     quaternary: '#F5F7FE',
   },
   background: {
-    primary: '#F5F7FE',
+    primary: '#ff8d66',
     secondary: '#393E46',
-    tertiary: '',
+    tertiary: '#393E46',
     quaternary: '#F5F7FE',
   },
   boxShadow: {

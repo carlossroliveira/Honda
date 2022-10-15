@@ -28,7 +28,7 @@ import {
   ImgThreeSC,
   LoaderSC,
   ParagraphThreeSC,
-  SpanBackOneSC,
+  ButtonBackOneSC,
   SpanColorSC,
   SpanOneSC,
   SpanSC,
@@ -77,11 +77,16 @@ export const Product = () => {
               <DivImagesSC>
                 <ImgThreeSC>
                   <ParagraphThreeSC>
-                    <SpanBackOneSC
+                    <ButtonBackOneSC
+                      disabled={
+                        item?.haveMoreColors?.find((img) => img.imgOne === null)
+                          ? true
+                          : false
+                      }
                       onClick={() => motorcycleIdentifier(item.id)}
                     >
                       Cor
-                    </SpanBackOneSC>
+                    </ButtonBackOneSC>
                   </ParagraphThreeSC>
                 </ImgThreeSC>
 
@@ -100,9 +105,13 @@ export const Product = () => {
                 )}
               </DivImagesSC>
 
-              <BrandSC>Marca: {item.brand}</BrandSC>
+              <BrandSC>
+                Marca: <SpanColorSC>{item.brand}</SpanColorSC>
+              </BrandSC>
 
-              <SpanOneSC>Nome: {item.name}</SpanOneSC>
+              <SpanOneSC>
+                Nome: <SpanColorSC>{item.name}</SpanColorSC>
+              </SpanOneSC>
 
               <SpanOneSC>
                 Pontuação: <SpanColorSC>{item.score}/100</SpanColorSC>

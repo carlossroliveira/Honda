@@ -16,31 +16,31 @@ export const getCircleStyled = (value: number) => {
   if (value === 1) {
     return css`
       ${CIRCLE_STYLE}
-      border-top-color: #21E7C5;
+      border-top-color: #393E46;
     `;
   }
   if (value === 2) {
     return css`
       ${CIRCLE_STYLE}
-      border-top-color: #21E7C5;
-      border-right-color: #21e7c5;
+      border-top-color: #393E46;
+      border-right-color: #393e46;
     `;
   }
   if (value === 3) {
     return css`
       ${CIRCLE_STYLE}
-      border-top-color: #21E7C5;
-      border-right-color: #21e7c5;
-      border-bottom-color: #21e7c5;
+      border-top-color: #393E46;
+      border-right-color: #393e46;
+      border-bottom-color: #393e46;
     `;
   }
   if (value === 4) {
     return css`
       ${CIRCLE_STYLE}
-      border-top-color: #21E7C5;
-      border-right-color: #21e7c5;
-      border-bottom-color: #21e7c5;
-      border-left-color: #21e7c5;
+      border-top-color: #393E46;
+      border-right-color: #393e46;
+      border-bottom-color: #393e46;
+      border-left-color: #393e46;
     `;
   }
   return css`

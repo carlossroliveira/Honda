@@ -5,13 +5,13 @@ export default {
     fontDefault: 'Roboto, sans-serif',
   },
   color: {
-    primary: '#545976',
+    primary: '#393E46',
     secondary: '#FFFFFF',
-    tertiary: '#00aaff',
-    quaternary: '#21E7C5',
+    tertiary: '#ff8d66',
+    quaternary: '#ff8d66',
   },
   background: {
-    primary: '#21E7C5',
+    primary: '#e74428',
     secondary: '#FFFFFF',
     tertiary: '#E6E7EC',
     quaternary: '#F5F7FE',

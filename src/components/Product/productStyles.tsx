@@ -38,13 +38,13 @@ export const ImgThreeSC = styled.div`
   height: 24px;
   border-radius: 4px;
 
-  background-color: ${({ theme }) => theme.background.quaternary};
-
   img {
     margin-right: 5px;
   }
 
   transition: 200ms linear;
+
+  background-color: ${({ theme }) => theme.background.quaternary};
 
   &:hover {
     ${EFFECT_STYLES}
@@ -67,10 +67,20 @@ export const ParagraphThreeSC = styled.p`
   }
 `;
 
-export const SpanBackOneSC = styled.span`
+export const ButtonBackOneSC = styled.button<{ disabled: boolean }>`
+  border: none;
+  outline: none;
+
   &:hover {
     cursor: pointer;
+    cursor: ${({ disabled }) => (disabled ? 'default' : 'pointer')};
   }
+
+  font-weight: 500;
+  background-color: transparent;
+  color: ${({ theme }) => theme.color.primary};
+
+  opacity: ${({ disabled }) => disabled && 0.7};
 `;
 
 export const SpanColorSC = styled.span`
@@ -88,18 +98,17 @@ export const SpanOneSC = styled.p`
 
 export const BrandSC = styled.p`
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 12px;
-  opacity: 0.9;
   margin: 1rem 0 0 0;
   color: ${({ theme }) => theme.color.primary};
 `;
 
 export const DivProduct = styled.div`
   transition: 200ms linear;
-  margin-right: 3rem;
+
   img {
-    width: 104px;
+    width: 10rem;
   }
 
   &:hover {
