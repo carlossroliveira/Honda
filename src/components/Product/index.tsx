@@ -38,6 +38,7 @@ import {
   SubMiniDivTwoSC,
 } from './productStyles';
 import { IProductProps } from '../../contextMain/contextApplication/types';
+import { Skeleton } from '../skeleton';
 
 export const Product = () => {
   const info = useMyHookApplication();
@@ -70,6 +71,19 @@ export const Product = () => {
 
   return (
     <>
+      {!info.data && (
+        <>
+          <Skeleton />
+          <Skeleton />
+          <Skeleton />
+          <Skeleton />
+          <Skeleton />
+          <Skeleton />
+          <Skeleton />
+          <Skeleton />
+          <Skeleton />
+        </>
+      )}
       {info?.data?.map((item: IProductProps) => (
         <DivMainSC key={item.id}>
           <DivOneSC>
@@ -129,7 +143,6 @@ export const Product = () => {
               />
             </DivProduct>
           </DivOneSC>
-
           <DivTwoSC>
             <SubDivTwoSC>
               <SubMiniDivTwoSC>
@@ -157,14 +170,11 @@ export const Product = () => {
               </LoaderSC>
             </SubDivThreeSC>
           </DivTwoSC>
-
           <DivThreeSC>
             <Button
               variant={'default'}
               icon={<AiOutlinePlusCircle />}
-              onClick={() => {
-                info.handleValue(), info.setArray([...info.array, item.name]);
-              }}
+              onClick={() => info.handleValue()}
               text={`${String(item.price).replace('.', ',')} `}
             />
           </DivThreeSC>

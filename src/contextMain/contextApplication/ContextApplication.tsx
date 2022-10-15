@@ -22,14 +22,7 @@ export const ThemeProviderApplication = ({
 }: IContextApplicationProvider): JSX.Element => {
   const { data } = useFetch<IProductProps[]>('http://localhost:5000/info');
 
-  const [array, setArray] = useState<any>([]);
   const [values, setValues] = useState<number>(0);
-
-  if (values !== 4) {
-    if (array.some((x: any) => array.indexOf(x) !== array.lastIndexOf(x))) {
-      console.log('a');
-    }
-  }
 
   const handleValue = () => {
     if (values < 4) {
@@ -38,7 +31,7 @@ export const ThemeProviderApplication = ({
   };
 
   return (
-    <Context.Provider value={{ data, handleValue, values, setArray, array }}>
+    <Context.Provider value={{ data, handleValue, values }}>
       {children}
     </Context.Provider>
   );

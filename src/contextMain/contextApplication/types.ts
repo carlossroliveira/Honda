@@ -1,7 +1,7 @@
 // -------------------------------------------------
 // Packages
 // -------------------------------------------------
-import { Dispatch, ReactNode } from 'react';
+import { ReactNode } from 'react';
 // -------------------------------------------------
 // Types
 // -------------------------------------------------
@@ -31,8 +31,6 @@ export interface IContextApplication {
   values: number;
   handleValue: () => void;
   data: IProductProps[] | null;
-  array: [];
-  setArray: Dispatch<React.SetStateAction<any[]>>;
 }
 
 export interface IContextApplicationProvider {
