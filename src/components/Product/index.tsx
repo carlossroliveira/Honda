@@ -38,7 +38,7 @@ import {
   SubMiniDivTwoSC,
 } from './productStyles';
 import { IProductProps } from '../../contextMain/contextApplication/types';
-import { Skeleton } from '../FirstSkeleton';
+import { Skeleton } from '../Skeleton';
 
 export const Product = () => {
   const info = useMyHookApplication();
