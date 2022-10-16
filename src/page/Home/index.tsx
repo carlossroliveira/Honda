@@ -27,6 +27,7 @@ import {
   SpanInfoSC,
   LoaderSC,
   DivParagraphSC,
+  FooterSC,
 } from './homeStyles';
 import { Footer } from '../../components/Footer';
 
@@ -75,9 +76,11 @@ export const Home = (): JSX.Element => {
 
       <MainSC>
         <Product />
-
-        <Footer />
       </MainSC>
+
+      <FooterSC>
+        <Footer />
+      </FooterSC>
     </ContainerSC>
   );
 };

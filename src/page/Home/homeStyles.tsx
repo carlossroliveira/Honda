@@ -9,14 +9,15 @@ export const ContainerSC = styled.section`
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 64px 100px 1fr;
+  grid-template-rows: 64px 100px 1fr 100px;
   grid-template-areas:
     'header header header'
     'info info info'
-    'content content content';
-`;
+    'content content content'
+    'footer footer footer';
 
-//=============== Div header
+  background-color: ${({ theme }) => theme.background.secondary};
+`;
 
 export const HeaderSC = styled.header`
   grid-area: header;
@@ -66,8 +67,6 @@ export const LoaderSC = styled.div<{ value: number }>`
 
   ${({ value }) => getCircleStyled(value)}
 `;
-
-//=============== Div info
 
 export const InfoSC = styled.div`
   grid-area: info;
@@ -121,8 +120,6 @@ export const SpanInfoSC = styled.span`
   color: ${({ theme }) => theme.color.tertiary};
 `;
 
-//=============== Div content
-
 export const MainSC = styled.main`
   grid-area: content;
 
@@ -134,4 +131,13 @@ export const MainSC = styled.main`
   justify-content: center;
 
   background-color: ${({ theme }) => theme.background.secondary};
+`;
+
+export const FooterSC = styled.footer`
+  grid-area: footer;
+
+  margin: 2rem;
+
+  display: flex;
+  justify-content: center;
 `;
