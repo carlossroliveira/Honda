@@ -81,7 +81,6 @@ export const Product = () => {
           <Skeleton />
           <Skeleton />
           <Skeleton />
-          <Skeleton />
         </>
       )}
       {info?.data?.map((item: IProductProps) => (

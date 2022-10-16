@@ -1,7 +1,7 @@
 // -------------------------------------------------
 // Packages
 // -------------------------------------------------
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 export const ContainerSC = styled.div`
   width: 396px;
@@ -22,19 +22,54 @@ export const DivOneSC = styled.div`
   }
 `;
 
+const FadeInAnimation = keyframes`  
+  70%{
+        transform: translateX(350px) skew(20deg);
+      }
+      100%{
+          transform: translateX(350px) skew(20deg);
+      }
+`;
+
 export const SubOneSpanOneSC = styled.span`
   width: 50px;
-  padding: 10px;
   border-radius: 8px;
-
   background-color: ${({ theme }) => theme.background.tertiary};
+  height: 20px;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    display: block;
+    height: 20px;
+    width: 50px;
+    left: -80px;
+    position: relative;
+    transform: skew(20deg);
+    background-color: rgba(255, 255, 255, 0.5);
+    animation: ${FadeInAnimation} 1.5s linear infinite;
+  }
 `;
 
 export const SubOneSpanTwoSC = styled.span`
   width: 80px;
-  padding: 10px;
   border-radius: 8px;
   background-color: ${({ theme }) => theme.background.tertiary};
+
+  height: 20px;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    display: block;
+    height: 20px;
+    width: 80px;
+    left: -100px;
+    position: relative;
+    transform: skew(20deg);
+    background-color: rgba(255, 255, 255, 0.5);
+    animation: ${FadeInAnimation} 1.5s linear infinite;
+  }
 `;
 
 export const DivTwoSC = styled.div`
@@ -49,17 +84,44 @@ export const DivTwoSC = styled.div`
 
 export const SubTwoDivOneSC = styled.div`
   width: 200px;
-  padding: 7px;
   border-radius: 8px;
   background-color: ${({ theme }) => theme.background.tertiary};
+
+  height: 10px;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    display: block;
+    height: 20px;
+    width: 80px;
+    left: -100px;
+    position: relative;
+    transform: skew(20deg);
+    background-color: rgba(255, 255, 255, 0.5);
+    animation: ${FadeInAnimation} 1.5s linear infinite;
+  }
 `;
 
 export const SubTwoDivTwoSC = styled.div`
   width: 110px;
   height: 80px;
-  padding: 7px;
   border-radius: 8px;
   background-color: ${({ theme }) => theme.background.quaternary};
+
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    display: block;
+    height: 80px;
+    width: 50px;
+    left: -100px;
+    position: relative;
+    transform: skew(20deg);
+    background-color: rgba(255, 255, 255, 0.5);
+    animation: ${FadeInAnimation} 1.5s linear infinite;
+  }
 `;
 
 export const DivThreeSC = styled.div`
@@ -84,9 +146,23 @@ export const SubDivThreeSC = styled.div`
 
 export const SubThreeSpanOneSC = styled.div`
   width: 150px;
-  padding: 7px;
   border-radius: 8px;
   background-color: ${({ theme }) => theme.background.tertiary};
+
+  height: 15px;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    display: block;
+    height: 15px;
+    width: 80px;
+    left: -100px;
+    position: relative;
+    transform: skew(20deg);
+    background-color: rgba(255, 255, 255, 0.5);
+    animation: ${FadeInAnimation} 1.5s linear infinite;
+  }
 `;
 
 export const SubThreeSpanTwoSC = styled.div`
@@ -95,6 +171,20 @@ export const SubThreeSpanTwoSC = styled.div`
   border-radius: 50%;
   margin-right: 1rem;
   background-color: ${({ theme }) => theme.background.tertiary};
+
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    display: block;
+    height: 50px;
+    width: 50px;
+    left: -100px;
+    position: relative;
+    transform: skew(20deg);
+    background-color: rgba(255, 255, 255, 0.5);
+    animation: ${FadeInAnimation} 1.5s linear infinite;
+  }
 `;
 
 export const DivFourSC = styled.div`
@@ -112,4 +202,18 @@ export const SubFourSpanOneSC = styled.div`
   height: 22px;
   border-radius: 29px;
   background-color: ${({ theme }) => theme.background.primary};
+
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    display: block;
+    height: 22px;
+    width: 50px;
+    left: -100px;
+    position: relative;
+    transform: skew(20deg);
+    background-color: rgba(255, 255, 255, 0.5);
+    animation: ${FadeInAnimation} 1.5s linear infinite;
+  }
 `;
