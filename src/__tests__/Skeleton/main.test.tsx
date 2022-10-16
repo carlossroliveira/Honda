@@ -9,7 +9,7 @@ import { render, screen } from '@testing-library/react';
 // -------------------------------------------------
 // Components
 // -------------------------------------------------
-import { Number } from '../../components/Number';
+import { Footer } from '../../components/Footer';
 // -------------------------------------------------
 // Context
 // -------------------------------------------------
@@ -19,36 +19,24 @@ import { ThemeProviderApplication } from '../../contextMain/contextApplication/C
 // -------------------------------------------------
 import dark from '../../styles/themes/dark';
 
-describe('Number Testing', () => {
+describe('Footer Testing', () => {
   it('Should render the component correctly.', () => {
     render(
       <ThemeProvider theme={dark}>
         <ThemeProviderApplication>
-          <Number score={0} />
+          <Footer />
         </ThemeProviderApplication>
       </ThemeProvider>,
     );
 
-    expect(screen.getByText(/0/i)).toBeInTheDocument();
-  });
-
-  it('Should render with the value 10 correctly.', () => {
-    render(
-      <ThemeProvider theme={dark}>
-        <ThemeProviderApplication>
-          <Number score={10} />
-        </ThemeProviderApplication>
-      </ThemeProvider>,
-    );
-
-    expect(screen.getByText(/10/i)).toBeInTheDocument();
+    expect(screen.getByText(/© 2022 \| carlos oliveira/i)).toBeInTheDocument();
   });
 
   it('component rendering matches snapshot correctly', () => {
     render(
       <ThemeProvider theme={dark}>
         <ThemeProviderApplication>
-          <Number score={10} />
+          <Footer />
         </ThemeProviderApplication>
       </ThemeProvider>,
     );
@@ -56,7 +44,7 @@ describe('Number Testing', () => {
       render(
         <ThemeProvider theme={dark}>
           <ThemeProviderApplication>
-            <Number score={10} />
+            <Footer />
           </ThemeProviderApplication>
         </ThemeProvider>,
       ),
