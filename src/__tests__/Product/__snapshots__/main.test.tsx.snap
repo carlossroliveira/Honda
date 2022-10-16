@@ -1,0 +1,2292 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Product Testing component rendering matches snapshot correctly 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": .c0 {
+  width: 396px;
+  height: 334px;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: rgba(0,0,0,0.17) 0px -23px 25px 0px inset,rgba(0,0,0,0.15) 0px -36px 30px 0px inset,rgba(0,0,0,0.1) 0px -79px 40px 0px inset,rgba(0,0,0,0.06) 0px 2px 1px,rgba(0,0,0,0.09) 0px 4px 2px,rgba(0,0,0,0.09) 0px 8px 4px,rgba(0,0,0,0.09) 0px 16px 8px,rgba(0,0,0,0.09) 0px 32px 16px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.c1 span + span {
+  margin-left: 10px;
+}
+
+.c2 {
+  width: 50px;
+  border-radius: 8px;
+  background-color: #393E46;
+  height: 20px;
+  overflow: hidden;
+}
+
+.c2::before {
+  content: '';
+  display: block;
+  height: 20px;
+  width: 50px;
+  left: -80px;
+  position: relative;
+  -webkit-transform: skew(20deg);
+  -ms-transform: skew(20deg);
+  transform: skew(20deg);
+  background-color: rgba(255,255,255,0.5);
+  -webkit-animation: blnvbv 1.5s linear infinite;
+  animation: blnvbv 1.5s linear infinite;
+}
+
+.c3 {
+  width: 80px;
+  border-radius: 8px;
+  background-color: #393E46;
+  height: 20px;
+  overflow: hidden;
+}
+
+.c3::before {
+  content: '';
+  display: block;
+  height: 20px;
+  width: 80px;
+  left: -100px;
+  position: relative;
+  -webkit-transform: skew(20deg);
+  -ms-transform: skew(20deg);
+  transform: skew(20deg);
+  background-color: rgba(255,255,255,0.5);
+  -webkit-animation: blnvbv 1.5s linear infinite;
+  animation: blnvbv 1.5s linear infinite;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c4 div + div {
+  margin-top: 5px;
+}
+
+.c5 {
+  width: 200px;
+  border-radius: 8px;
+  background-color: #393E46;
+  height: 10px;
+  overflow: hidden;
+}
+
+.c5::before {
+  content: '';
+  display: block;
+  height: 20px;
+  width: 80px;
+  left: -100px;
+  position: relative;
+  -webkit-transform: skew(20deg);
+  -ms-transform: skew(20deg);
+  transform: skew(20deg);
+  background-color: rgba(255,255,255,0.5);
+  -webkit-animation: blnvbv 1.5s linear infinite;
+  animation: blnvbv 1.5s linear infinite;
+}
+
+.c6 {
+  width: 110px;
+  height: 80px;
+  border-radius: 8px;
+  background-color: #F5F7FE;
+  overflow: hidden;
+}
+
+.c6::before {
+  content: '';
+  display: block;
+  height: 80px;
+  width: 50px;
+  left: -100px;
+  position: relative;
+  -webkit-transform: skew(20deg);
+  -ms-transform: skew(20deg);
+  transform: skew(20deg);
+  background-color: rgba(255,255,255,0.5);
+  -webkit-animation: blnvbv 1.5s linear infinite;
+  animation: blnvbv 1.5s linear infinite;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 5px;
+  margin-top: 10px;
+  border-radius: 4px;
+  background-color: #F5F7FE;
+}
+
+.c7 div + div {
+  margin-top: 10px;
+}
+
+.c9 {
+  margin: 10px 0;
+}
+
+.c8 {
+  width: 150px;
+  border-radius: 8px;
+  background-color: #393E46;
+  height: 15px;
+  overflow: hidden;
+}
+
+.c8::before {
+  content: '';
+  display: block;
+  height: 15px;
+  width: 80px;
+  left: -100px;
+  position: relative;
+  -webkit-transform: skew(20deg);
+  -ms-transform: skew(20deg);
+  transform: skew(20deg);
+  background-color: rgba(255,255,255,0.5);
+  -webkit-animation: blnvbv 1.5s linear infinite;
+  animation: blnvbv 1.5s linear infinite;
+}
+
+.c10 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 1rem;
+  background-color: #393E46;
+  overflow: hidden;
+}
+
+.c10::before {
+  content: '';
+  display: block;
+  height: 50px;
+  width: 50px;
+  left: -100px;
+  position: relative;
+  -webkit-transform: skew(20deg);
+  -ms-transform: skew(20deg);
+  transform: skew(20deg);
+  background-color: rgba(255,255,255,0.5);
+  -webkit-animation: blnvbv 1.5s linear infinite;
+  animation: blnvbv 1.5s linear infinite;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+  margin-top: 10px;
+}
+
+.c12 {
+  opacity: 0.6;
+  width: 165px;
+  height: 22px;
+  border-radius: 29px;
+  background-color: #ff8d66;
+  overflow: hidden;
+}
+
+.c12::before {
+  content: '';
+  display: block;
+  height: 22px;
+  width: 50px;
+  left: -100px;
+  position: relative;
+  -webkit-transform: skew(20deg);
+  -ms-transform: skew(20deg);
+  transform: skew(20deg);
+  background-color: rgba(255,255,255,0.5);
+  -webkit-animation: blnvbv 1.5s linear infinite;
+  animation: blnvbv 1.5s linear infinite;
+}
+
+<body>
+    <div>
+      <div
+        class="c0"
+      >
+        <div
+          class="c1"
+        >
+          <span
+            class="c2"
+          />
+          <span
+            class="c2"
+          />
+          <span
+            class="c3"
+          />
+        </div>
+        <div
+          class="c4"
+        >
+          <div>
+            <div
+              class="c5"
+            />
+            <div
+              class="c5"
+            />
+            <div
+              class="c5"
+            />
+          </div>
+          <div>
+            <div
+              class="c6"
+            />
+          </div>
+        </div>
+        <div
+          class="c7"
+        >
+          <div>
+            <div
+              class="c8"
+            />
+            <div
+              class="c8"
+            />
+            <div
+              class="c8"
+            />
+            <div
+              class="c8"
+            />
+          </div>
+          <div
+            class="c9"
+          >
+            <div
+              class="c10"
+            />
+            <div
+              class="c10"
+            />
+          </div>
+        </div>
+        <div
+          class="c11"
+        >
+          <div
+            class="c12"
+          />
+        </div>
+      </div>
+      <div
+        class="c0"
+      >
+        <div
+          class="c1"
+        >
+          <span
+            class="c2"
+          />
+          <span
+            class="c2"
+          />
+          <span
+            class="c3"
+          />
+        </div>
+        <div
+          class="c4"
+        >
+          <div>
+            <div
+              class="c5"
+            />
+            <div
+              class="c5"
+            />
+            <div
+              class="c5"
+            />
+          </div>
+          <div>
+            <div
+              class="c6"
+            />
+          </div>
+        </div>
+        <div
+          class="c7"
+        >
+          <div>
+            <div
+              class="c8"
+            />
+            <div
+              class="c8"
+            />
+            <div
+              class="c8"
+            />
+            <div
+              class="c8"
+            />
+          </div>
+          <div
+            class="c9"
+          >
+            <div
+              class="c10"
+            />
+            <div
+              class="c10"
+            />
+          </div>
+        </div>
+        <div
+          class="c11"
+        >
+          <div
+            class="c12"
+          />
+        </div>
+      </div>
+      <div
+        class="c0"
+      >
+        <div
+          class="c1"
+        >
+          <span
+            class="c2"
+          />
+          <span
+            class="c2"
+          />
+          <span
+            class="c3"
+          />
+        </div>
+        <div
+          class="c4"
+        >
+          <div>
+            <div
+              class="c5"
+            />
+            <div
+              class="c5"
+            />
+            <div
+              class="c5"
+            />
+          </div>
+          <div>
+            <div
+              class="c6"
+            />
+          </div>
+        </div>
+        <div
+          class="c7"
+        >
+          <div>
+            <div
+              class="c8"
+            />
+            <div
+              class="c8"
+            />
+            <div
+              class="c8"
+            />
+            <div
+              class="c8"
+            />
+          </div>
+          <div
+            class="c9"
+          >
+            <div
+              class="c10"
+            />
+            <div
+              class="c10"
+            />
+          </div>
+        </div>
+        <div
+          class="c11"
+        >
+          <div
+            class="c12"
+          />
+        </div>
+      </div>
+      <div
+        class="c0"
+      >
+        <div
+          class="c1"
+        >
+          <span
+            class="c2"
+          />
+          <span
+            class="c2"
+          />
+          <span
+            class="c3"
+          />
+        </div>
+        <div
+          class="c4"
+        >
+          <div>
+            <div
+              class="c5"
+            />
+            <div
+              class="c5"
+            />
+            <div
+              class="c5"
+            />
+          </div>
+          <div>
+            <div
+              class="c6"
+            />
+          </div>
+        </div>
+        <div
+          class="c7"
+        >
+          <div>
+            <div
+              class="c8"
+            />
+            <div
+              class="c8"
+            />
+            <div
+              class="c8"
+            />
+            <div
+              class="c8"
+            />
+          </div>
+          <div
+            class="c9"
+          >
+            <div
+              class="c10"
+            />
+            <div
+              class="c10"
+            />
+          </div>
+        </div>
+        <div
+          class="c11"
+        >
+          <div
+            class="c12"
+          />
+        </div>
+      </div>
+      <div
+        class="c0"
+      >
+        <div
+          class="c1"
+        >
+          <span
+            class="c2"
+          />
+          <span
+            class="c2"
+          />
+          <span
+            class="c3"
+          />
+        </div>
+        <div
+          class="c4"
+        >
+          <div>
+            <div
+              class="c5"
+            />
+            <div
+              class="c5"
+            />
+            <div
+              class="c5"
+            />
+          </div>
+          <div>
+            <div
+              class="c6"
+            />
+          </div>
+        </div>
+        <div
+          class="c7"
+        >
+          <div>
+            <div
+              class="c8"
+            />
+            <div
+              class="c8"
+            />
+            <div
+              class="c8"
+            />
+            <div
+              class="c8"
+            />
+          </div>
+          <div
+            class="c9"
+          >
+            <div
+              class="c10"
+            />
+            <div
+              class="c10"
+            />
+          </div>
+        </div>
+        <div
+          class="c11"
+        >
+          <div
+            class="c12"
+          />
+        </div>
+      </div>
+      <div
+        class="c0"
+      >
+        <div
+          class="c1"
+        >
+          <span
+            class="c2"
+          />
+          <span
+            class="c2"
+          />
+          <span
+            class="c3"
+          />
+        </div>
+        <div
+          class="c4"
+        >
+          <div>
+            <div
+              class="c5"
+            />
+            <div
+              class="c5"
+            />
+            <div
+              class="c5"
+            />
+          </div>
+          <div>
+            <div
+              class="c6"
+            />
+          </div>
+        </div>
+        <div
+          class="c7"
+        >
+          <div>
+            <div
+              class="c8"
+            />
+            <div
+              class="c8"
+            />
+            <div
+              class="c8"
+            />
+            <div
+              class="c8"
+            />
+          </div>
+          <div
+            class="c9"
+          >
+            <div
+              class="c10"
+            />
+            <div
+              class="c10"
+            />
+          </div>
+        </div>
+        <div
+          class="c11"
+        >
+          <div
+            class="c12"
+          />
+        </div>
+      </div>
+      <div
+        class="c0"
+      >
+        <div
+          class="c1"
+        >
+          <span
+            class="c2"
+          />
+          <span
+            class="c2"
+          />
+          <span
+            class="c3"
+          />
+        </div>
+        <div
+          class="c4"
+        >
+          <div>
+            <div
+              class="c5"
+            />
+            <div
+              class="c5"
+            />
+            <div
+              class="c5"
+            />
+          </div>
+          <div>
+            <div
+              class="c6"
+            />
+          </div>
+        </div>
+        <div
+          class="c7"
+        >
+          <div>
+            <div
+              class="c8"
+            />
+            <div
+              class="c8"
+            />
+            <div
+              class="c8"
+            />
+            <div
+              class="c8"
+            />
+          </div>
+          <div
+            class="c9"
+          >
+            <div
+              class="c10"
+            />
+            <div
+              class="c10"
+            />
+          </div>
+        </div>
+        <div
+          class="c11"
+        >
+          <div
+            class="c12"
+          />
+        </div>
+      </div>
+      <div
+        class="c0"
+      >
+        <div
+          class="c1"
+        >
+          <span
+            class="c2"
+          />
+          <span
+            class="c2"
+          />
+          <span
+            class="c3"
+          />
+        </div>
+        <div
+          class="c4"
+        >
+          <div>
+            <div
+              class="c5"
+            />
+            <div
+              class="c5"
+            />
+            <div
+              class="c5"
+            />
+          </div>
+          <div>
+            <div
+              class="c6"
+            />
+          </div>
+        </div>
+        <div
+          class="c7"
+        >
+          <div>
+            <div
+              class="c8"
+            />
+            <div
+              class="c8"
+            />
+            <div
+              class="c8"
+            />
+            <div
+              class="c8"
+            />
+          </div>
+          <div
+            class="c9"
+          >
+            <div
+              class="c10"
+            />
+            <div
+              class="c10"
+            />
+          </div>
+        </div>
+        <div
+          class="c11"
+        >
+          <div
+            class="c12"
+          />
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        class="c0"
+      >
+        <div
+          class="c1"
+        >
+          <span
+            class="c2"
+          />
+          <span
+            class="c2"
+          />
+          <span
+            class="c3"
+          />
+        </div>
+        <div
+          class="c4"
+        >
+          <div>
+            <div
+              class="c5"
+            />
+            <div
+              class="c5"
+            />
+            <div
+              class="c5"
+            />
+          </div>
+          <div>
+            <div
+              class="c6"
+            />
+          </div>
+        </div>
+        <div
+          class="c7"
+        >
+          <div>
+            <div
+              class="c8"
+            />
+            <div
+              class="c8"
+            />
+            <div
+              class="c8"
+            />
+            <div
+              class="c8"
+            />
+          </div>
+          <div
+            class="c9"
+          >
+            <div
+              class="c10"
+            />
+            <div
+              class="c10"
+            />
+          </div>
+        </div>
+        <div
+          class="c11"
+        >
+          <div
+            class="c12"
+          />
+        </div>
+      </div>
+      <div
+        class="c0"
+      >
+        <div
+          class="c1"
+        >
+          <span
+            class="c2"
+          />
+          <span
+            class="c2"
+          />
+          <span
+            class="c3"
+          />
+        </div>
+        <div
+          class="c4"
+        >
+          <div>
+            <div
+              class="c5"
+            />
+            <div
+              class="c5"
+            />
+            <div
+              class="c5"
+            />
+          </div>
+          <div>
+            <div
+              class="c6"
+            />
+          </div>
+        </div>
+        <div
+          class="c7"
+        >
+          <div>
+            <div
+              class="c8"
+            />
+            <div
+              class="c8"
+            />
+            <div
+              class="c8"
+            />
+            <div
+              class="c8"
+            />
+          </div>
+          <div
+            class="c9"
+          >
+            <div
+              class="c10"
+            />
+            <div
+              class="c10"
+            />
+          </div>
+        </div>
+        <div
+          class="c11"
+        >
+          <div
+            class="c12"
+          />
+        </div>
+      </div>
+      <div
+        class="c0"
+      >
+        <div
+          class="c1"
+        >
+          <span
+            class="c2"
+          />
+          <span
+            class="c2"
+          />
+          <span
+            class="c3"
+          />
+        </div>
+        <div
+          class="c4"
+        >
+          <div>
+            <div
+              class="c5"
+            />
+            <div
+              class="c5"
+            />
+            <div
+              class="c5"
+            />
+          </div>
+          <div>
+            <div
+              class="c6"
+            />
+          </div>
+        </div>
+        <div
+          class="c7"
+        >
+          <div>
+            <div
+              class="c8"
+            />
+            <div
+              class="c8"
+            />
+            <div
+              class="c8"
+            />
+            <div
+              class="c8"
+            />
+          </div>
+          <div
+            class="c9"
+          >
+            <div
+              class="c10"
+            />
+            <div
+              class="c10"
+            />
+          </div>
+        </div>
+        <div
+          class="c11"
+        >
+          <div
+            class="c12"
+          />
+        </div>
+      </div>
+      <div
+        class="c0"
+      >
+        <div
+          class="c1"
+        >
+          <span
+            class="c2"
+          />
+          <span
+            class="c2"
+          />
+          <span
+            class="c3"
+          />
+        </div>
+        <div
+          class="c4"
+        >
+          <div>
+            <div
+              class="c5"
+            />
+            <div
+              class="c5"
+            />
+            <div
+              class="c5"
+            />
+          </div>
+          <div>
+            <div
+              class="c6"
+            />
+          </div>
+        </div>
+        <div
+          class="c7"
+        >
+          <div>
+            <div
+              class="c8"
+            />
+            <div
+              class="c8"
+            />
+            <div
+              class="c8"
+            />
+            <div
+              class="c8"
+            />
+          </div>
+          <div
+            class="c9"
+          >
+            <div
+              class="c10"
+            />
+            <div
+              class="c10"
+            />
+          </div>
+        </div>
+        <div
+          class="c11"
+        >
+          <div
+            class="c12"
+          />
+        </div>
+      </div>
+      <div
+        class="c0"
+      >
+        <div
+          class="c1"
+        >
+          <span
+            class="c2"
+          />
+          <span
+            class="c2"
+          />
+          <span
+            class="c3"
+          />
+        </div>
+        <div
+          class="c4"
+        >
+          <div>
+            <div
+              class="c5"
+            />
+            <div
+              class="c5"
+            />
+            <div
+              class="c5"
+            />
+          </div>
+          <div>
+            <div
+              class="c6"
+            />
+          </div>
+        </div>
+        <div
+          class="c7"
+        >
+          <div>
+            <div
+              class="c8"
+            />
+            <div
+              class="c8"
+            />
+            <div
+              class="c8"
+            />
+            <div
+              class="c8"
+            />
+          </div>
+          <div
+            class="c9"
+          >
+            <div
+              class="c10"
+            />
+            <div
+              class="c10"
+            />
+          </div>
+        </div>
+        <div
+          class="c11"
+        >
+          <div
+            class="c12"
+          />
+        </div>
+      </div>
+      <div
+        class="c0"
+      >
+        <div
+          class="c1"
+        >
+          <span
+            class="c2"
+          />
+          <span
+            class="c2"
+          />
+          <span
+            class="c3"
+          />
+        </div>
+        <div
+          class="c4"
+        >
+          <div>
+            <div
+              class="c5"
+            />
+            <div
+              class="c5"
+            />
+            <div
+              class="c5"
+            />
+          </div>
+          <div>
+            <div
+              class="c6"
+            />
+          </div>
+        </div>
+        <div
+          class="c7"
+        >
+          <div>
+            <div
+              class="c8"
+            />
+            <div
+              class="c8"
+            />
+            <div
+              class="c8"
+            />
+            <div
+              class="c8"
+            />
+          </div>
+          <div
+            class="c9"
+          >
+            <div
+              class="c10"
+            />
+            <div
+              class="c10"
+            />
+          </div>
+        </div>
+        <div
+          class="c11"
+        >
+          <div
+            class="c12"
+          />
+        </div>
+      </div>
+      <div
+        class="c0"
+      >
+        <div
+          class="c1"
+        >
+          <span
+            class="c2"
+          />
+          <span
+            class="c2"
+          />
+          <span
+            class="c3"
+          />
+        </div>
+        <div
+          class="c4"
+        >
+          <div>
+            <div
+              class="c5"
+            />
+            <div
+              class="c5"
+            />
+            <div
+              class="c5"
+            />
+          </div>
+          <div>
+            <div
+              class="c6"
+            />
+          </div>
+        </div>
+        <div
+          class="c7"
+        >
+          <div>
+            <div
+              class="c8"
+            />
+            <div
+              class="c8"
+            />
+            <div
+              class="c8"
+            />
+            <div
+              class="c8"
+            />
+          </div>
+          <div
+            class="c9"
+          >
+            <div
+              class="c10"
+            />
+            <div
+              class="c10"
+            />
+          </div>
+        </div>
+        <div
+          class="c11"
+        >
+          <div
+            class="c12"
+          />
+        </div>
+      </div>
+      <div
+        class="c0"
+      >
+        <div
+          class="c1"
+        >
+          <span
+            class="c2"
+          />
+          <span
+            class="c2"
+          />
+          <span
+            class="c3"
+          />
+        </div>
+        <div
+          class="c4"
+        >
+          <div>
+            <div
+              class="c5"
+            />
+            <div
+              class="c5"
+            />
+            <div
+              class="c5"
+            />
+          </div>
+          <div>
+            <div
+              class="c6"
+            />
+          </div>
+        </div>
+        <div
+          class="c7"
+        >
+          <div>
+            <div
+              class="c8"
+            />
+            <div
+              class="c8"
+            />
+            <div
+              class="c8"
+            />
+            <div
+              class="c8"
+            />
+          </div>
+          <div
+            class="c9"
+          >
+            <div
+              class="c10"
+            />
+            <div
+              class="c10"
+            />
+          </div>
+        </div>
+        <div
+          class="c11"
+        >
+          <div
+            class="c12"
+          />
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": .c0 {
+  width: 396px;
+  height: 334px;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: rgba(0,0,0,0.17) 0px -23px 25px 0px inset,rgba(0,0,0,0.15) 0px -36px 30px 0px inset,rgba(0,0,0,0.1) 0px -79px 40px 0px inset,rgba(0,0,0,0.06) 0px 2px 1px,rgba(0,0,0,0.09) 0px 4px 2px,rgba(0,0,0,0.09) 0px 8px 4px,rgba(0,0,0,0.09) 0px 16px 8px,rgba(0,0,0,0.09) 0px 32px 16px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.c1 span + span {
+  margin-left: 10px;
+}
+
+.c2 {
+  width: 50px;
+  border-radius: 8px;
+  background-color: #393E46;
+  height: 20px;
+  overflow: hidden;
+}
+
+.c2::before {
+  content: '';
+  display: block;
+  height: 20px;
+  width: 50px;
+  left: -80px;
+  position: relative;
+  -webkit-transform: skew(20deg);
+  -ms-transform: skew(20deg);
+  transform: skew(20deg);
+  background-color: rgba(255,255,255,0.5);
+  -webkit-animation: blnvbv 1.5s linear infinite;
+  animation: blnvbv 1.5s linear infinite;
+}
+
+.c3 {
+  width: 80px;
+  border-radius: 8px;
+  background-color: #393E46;
+  height: 20px;
+  overflow: hidden;
+}
+
+.c3::before {
+  content: '';
+  display: block;
+  height: 20px;
+  width: 80px;
+  left: -100px;
+  position: relative;
+  -webkit-transform: skew(20deg);
+  -ms-transform: skew(20deg);
+  transform: skew(20deg);
+  background-color: rgba(255,255,255,0.5);
+  -webkit-animation: blnvbv 1.5s linear infinite;
+  animation: blnvbv 1.5s linear infinite;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c4 div + div {
+  margin-top: 5px;
+}
+
+.c5 {
+  width: 200px;
+  border-radius: 8px;
+  background-color: #393E46;
+  height: 10px;
+  overflow: hidden;
+}
+
+.c5::before {
+  content: '';
+  display: block;
+  height: 20px;
+  width: 80px;
+  left: -100px;
+  position: relative;
+  -webkit-transform: skew(20deg);
+  -ms-transform: skew(20deg);
+  transform: skew(20deg);
+  background-color: rgba(255,255,255,0.5);
+  -webkit-animation: blnvbv 1.5s linear infinite;
+  animation: blnvbv 1.5s linear infinite;
+}
+
+.c6 {
+  width: 110px;
+  height: 80px;
+  border-radius: 8px;
+  background-color: #F5F7FE;
+  overflow: hidden;
+}
+
+.c6::before {
+  content: '';
+  display: block;
+  height: 80px;
+  width: 50px;
+  left: -100px;
+  position: relative;
+  -webkit-transform: skew(20deg);
+  -ms-transform: skew(20deg);
+  transform: skew(20deg);
+  background-color: rgba(255,255,255,0.5);
+  -webkit-animation: blnvbv 1.5s linear infinite;
+  animation: blnvbv 1.5s linear infinite;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 5px;
+  margin-top: 10px;
+  border-radius: 4px;
+  background-color: #F5F7FE;
+}
+
+.c7 div + div {
+  margin-top: 10px;
+}
+
+.c9 {
+  margin: 10px 0;
+}
+
+.c8 {
+  width: 150px;
+  border-radius: 8px;
+  background-color: #393E46;
+  height: 15px;
+  overflow: hidden;
+}
+
+.c8::before {
+  content: '';
+  display: block;
+  height: 15px;
+  width: 80px;
+  left: -100px;
+  position: relative;
+  -webkit-transform: skew(20deg);
+  -ms-transform: skew(20deg);
+  transform: skew(20deg);
+  background-color: rgba(255,255,255,0.5);
+  -webkit-animation: blnvbv 1.5s linear infinite;
+  animation: blnvbv 1.5s linear infinite;
+}
+
+.c10 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 1rem;
+  background-color: #393E46;
+  overflow: hidden;
+}
+
+.c10::before {
+  content: '';
+  display: block;
+  height: 50px;
+  width: 50px;
+  left: -100px;
+  position: relative;
+  -webkit-transform: skew(20deg);
+  -ms-transform: skew(20deg);
+  transform: skew(20deg);
+  background-color: rgba(255,255,255,0.5);
+  -webkit-animation: blnvbv 1.5s linear infinite;
+  animation: blnvbv 1.5s linear infinite;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+  margin-top: 10px;
+}
+
+.c12 {
+  opacity: 0.6;
+  width: 165px;
+  height: 22px;
+  border-radius: 29px;
+  background-color: #ff8d66;
+  overflow: hidden;
+}
+
+.c12::before {
+  content: '';
+  display: block;
+  height: 22px;
+  width: 50px;
+  left: -100px;
+  position: relative;
+  -webkit-transform: skew(20deg);
+  -ms-transform: skew(20deg);
+  transform: skew(20deg);
+  background-color: rgba(255,255,255,0.5);
+  -webkit-animation: blnvbv 1.5s linear infinite;
+  animation: blnvbv 1.5s linear infinite;
+}
+
+<div>
+    <div
+      class="c0"
+    >
+      <div
+        class="c1"
+      >
+        <span
+          class="c2"
+        />
+        <span
+          class="c2"
+        />
+        <span
+          class="c3"
+        />
+      </div>
+      <div
+        class="c4"
+      >
+        <div>
+          <div
+            class="c5"
+          />
+          <div
+            class="c5"
+          />
+          <div
+            class="c5"
+          />
+        </div>
+        <div>
+          <div
+            class="c6"
+          />
+        </div>
+      </div>
+      <div
+        class="c7"
+      >
+        <div>
+          <div
+            class="c8"
+          />
+          <div
+            class="c8"
+          />
+          <div
+            class="c8"
+          />
+          <div
+            class="c8"
+          />
+        </div>
+        <div
+          class="c9"
+        >
+          <div
+            class="c10"
+          />
+          <div
+            class="c10"
+          />
+        </div>
+      </div>
+      <div
+        class="c11"
+      >
+        <div
+          class="c12"
+        />
+      </div>
+    </div>
+    <div
+      class="c0"
+    >
+      <div
+        class="c1"
+      >
+        <span
+          class="c2"
+        />
+        <span
+          class="c2"
+        />
+        <span
+          class="c3"
+        />
+      </div>
+      <div
+        class="c4"
+      >
+        <div>
+          <div
+            class="c5"
+          />
+          <div
+            class="c5"
+          />
+          <div
+            class="c5"
+          />
+        </div>
+        <div>
+          <div
+            class="c6"
+          />
+        </div>
+      </div>
+      <div
+        class="c7"
+      >
+        <div>
+          <div
+            class="c8"
+          />
+          <div
+            class="c8"
+          />
+          <div
+            class="c8"
+          />
+          <div
+            class="c8"
+          />
+        </div>
+        <div
+          class="c9"
+        >
+          <div
+            class="c10"
+          />
+          <div
+            class="c10"
+          />
+        </div>
+      </div>
+      <div
+        class="c11"
+      >
+        <div
+          class="c12"
+        />
+      </div>
+    </div>
+    <div
+      class="c0"
+    >
+      <div
+        class="c1"
+      >
+        <span
+          class="c2"
+        />
+        <span
+          class="c2"
+        />
+        <span
+          class="c3"
+        />
+      </div>
+      <div
+        class="c4"
+      >
+        <div>
+          <div
+            class="c5"
+          />
+          <div
+            class="c5"
+          />
+          <div
+            class="c5"
+          />
+        </div>
+        <div>
+          <div
+            class="c6"
+          />
+        </div>
+      </div>
+      <div
+        class="c7"
+      >
+        <div>
+          <div
+            class="c8"
+          />
+          <div
+            class="c8"
+          />
+          <div
+            class="c8"
+          />
+          <div
+            class="c8"
+          />
+        </div>
+        <div
+          class="c9"
+        >
+          <div
+            class="c10"
+          />
+          <div
+            class="c10"
+          />
+        </div>
+      </div>
+      <div
+        class="c11"
+      >
+        <div
+          class="c12"
+        />
+      </div>
+    </div>
+    <div
+      class="c0"
+    >
+      <div
+        class="c1"
+      >
+        <span
+          class="c2"
+        />
+        <span
+          class="c2"
+        />
+        <span
+          class="c3"
+        />
+      </div>
+      <div
+        class="c4"
+      >
+        <div>
+          <div
+            class="c5"
+          />
+          <div
+            class="c5"
+          />
+          <div
+            class="c5"
+          />
+        </div>
+        <div>
+          <div
+            class="c6"
+          />
+        </div>
+      </div>
+      <div
+        class="c7"
+      >
+        <div>
+          <div
+            class="c8"
+          />
+          <div
+            class="c8"
+          />
+          <div
+            class="c8"
+          />
+          <div
+            class="c8"
+          />
+        </div>
+        <div
+          class="c9"
+        >
+          <div
+            class="c10"
+          />
+          <div
+            class="c10"
+          />
+        </div>
+      </div>
+      <div
+        class="c11"
+      >
+        <div
+          class="c12"
+        />
+      </div>
+    </div>
+    <div
+      class="c0"
+    >
+      <div
+        class="c1"
+      >
+        <span
+          class="c2"
+        />
+        <span
+          class="c2"
+        />
+        <span
+          class="c3"
+        />
+      </div>
+      <div
+        class="c4"
+      >
+        <div>
+          <div
+            class="c5"
+          />
+          <div
+            class="c5"
+          />
+          <div
+            class="c5"
+          />
+        </div>
+        <div>
+          <div
+            class="c6"
+          />
+        </div>
+      </div>
+      <div
+        class="c7"
+      >
+        <div>
+          <div
+            class="c8"
+          />
+          <div
+            class="c8"
+          />
+          <div
+            class="c8"
+          />
+          <div
+            class="c8"
+          />
+        </div>
+        <div
+          class="c9"
+        >
+          <div
+            class="c10"
+          />
+          <div
+            class="c10"
+          />
+        </div>
+      </div>
+      <div
+        class="c11"
+      >
+        <div
+          class="c12"
+        />
+      </div>
+    </div>
+    <div
+      class="c0"
+    >
+      <div
+        class="c1"
+      >
+        <span
+          class="c2"
+        />
+        <span
+          class="c2"
+        />
+        <span
+          class="c3"
+        />
+      </div>
+      <div
+        class="c4"
+      >
+        <div>
+          <div
+            class="c5"
+          />
+          <div
+            class="c5"
+          />
+          <div
+            class="c5"
+          />
+        </div>
+        <div>
+          <div
+            class="c6"
+          />
+        </div>
+      </div>
+      <div
+        class="c7"
+      >
+        <div>
+          <div
+            class="c8"
+          />
+          <div
+            class="c8"
+          />
+          <div
+            class="c8"
+          />
+          <div
+            class="c8"
+          />
+        </div>
+        <div
+          class="c9"
+        >
+          <div
+            class="c10"
+          />
+          <div
+            class="c10"
+          />
+        </div>
+      </div>
+      <div
+        class="c11"
+      >
+        <div
+          class="c12"
+        />
+      </div>
+    </div>
+    <div
+      class="c0"
+    >
+      <div
+        class="c1"
+      >
+        <span
+          class="c2"
+        />
+        <span
+          class="c2"
+        />
+        <span
+          class="c3"
+        />
+      </div>
+      <div
+        class="c4"
+      >
+        <div>
+          <div
+            class="c5"
+          />
+          <div
+            class="c5"
+          />
+          <div
+            class="c5"
+          />
+        </div>
+        <div>
+          <div
+            class="c6"
+          />
+        </div>
+      </div>
+      <div
+        class="c7"
+      >
+        <div>
+          <div
+            class="c8"
+          />
+          <div
+            class="c8"
+          />
+          <div
+            class="c8"
+          />
+          <div
+            class="c8"
+          />
+        </div>
+        <div
+          class="c9"
+        >
+          <div
+            class="c10"
+          />
+          <div
+            class="c10"
+          />
+        </div>
+      </div>
+      <div
+        class="c11"
+      >
+        <div
+          class="c12"
+        />
+      </div>
+    </div>
+    <div
+      class="c0"
+    >
+      <div
+        class="c1"
+      >
+        <span
+          class="c2"
+        />
+        <span
+          class="c2"
+        />
+        <span
+          class="c3"
+        />
+      </div>
+      <div
+        class="c4"
+      >
+        <div>
+          <div
+            class="c5"
+          />
+          <div
+            class="c5"
+          />
+          <div
+            class="c5"
+          />
+        </div>
+        <div>
+          <div
+            class="c6"
+          />
+        </div>
+      </div>
+      <div
+        class="c7"
+      >
+        <div>
+          <div
+            class="c8"
+          />
+          <div
+            class="c8"
+          />
+          <div
+            class="c8"
+          />
+          <div
+            class="c8"
+          />
+        </div>
+        <div
+          class="c9"
+        >
+          <div
+            class="c10"
+          />
+          <div
+            class="c10"
+          />
+        </div>
+      </div>
+      <div
+        class="c11"
+      >
+        <div
+          class="c12"
+        />
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

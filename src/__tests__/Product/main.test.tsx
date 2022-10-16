@@ -4,12 +4,12 @@
 import React from 'react';
 import 'jest-styled-components';
 import '@testing-library/jest-dom';
-import { render } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
+import { render } from '@testing-library/react';
 // -------------------------------------------------
 // Components
 // -------------------------------------------------
-import { Skeleton } from '../../components/Skeleton';
+import { Product } from '../../components/Product';
 // -------------------------------------------------
 // Context
 // -------------------------------------------------
@@ -19,12 +19,12 @@ import { ThemeProviderApplication } from '../../contextMain/contextApplication/C
 // -------------------------------------------------
 import dark from '../../styles/themes/dark';
 
-describe('Skeleton Testing', () => {
+describe('Product Testing', () => {
   it('component rendering matches snapshot correctly', () => {
     render(
       <ThemeProvider theme={dark}>
         <ThemeProviderApplication>
-          <Skeleton />
+          <Product />
         </ThemeProviderApplication>
       </ThemeProvider>,
     );
@@ -32,7 +32,7 @@ describe('Skeleton Testing', () => {
       render(
         <ThemeProvider theme={dark}>
           <ThemeProviderApplication>
-            <Skeleton />
+            <Product />
           </ThemeProviderApplication>
         </ThemeProvider>,
       ),
